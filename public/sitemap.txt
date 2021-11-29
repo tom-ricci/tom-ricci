@@ -1,0 +1,1 @@
+https://www.thomasricci.dev/%PUBLIC_URL%/?/
