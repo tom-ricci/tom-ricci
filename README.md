@@ -20,7 +20,7 @@ I'm a 17 year old developer with experience in a variety of frontend and backend
 ### [Octobox](https://octobox.thomasricci.dev/)
 Octobox is a simple but powerful React meta-framework built in TypeScript.
 ### [FTC 19460](https://robotics.xbhs.net)
-I'm the lead programmer of FTC  19460, a competitive robotics team based in Massachusetts.
+I'm the Captian and Software Director of FTC  19460, a competitive robotics team based in Massachusetts.
 ### [Extrastrap](https://www.npmjs.com/package/extrastrap)
 A small collection of Bootstrap-like utility classes made to extend your Bootstrap usage.
 ### [React-spacer](https://www.npmjs.com/package/@tom-ricci/react-spacer)
