@@ -21,7 +21,7 @@ I'm a 17 year old developer with experience in a variety of frontend and backend
 Octobox is a simple but powerful React meta-framework built in TypeScript.
 ### [FTC 19460](https://robotics.xbhs.net)
 I'm the Captain and Software Director of FTC  19460, a competitive robotics team based in Massachusetts.
-### [Contributor](https://robotics.xbhs.net)
+### [Contributor](https://github.com/tom-ricci/contributor)
 A utility for adding more commits to your contribution table.
 ### [Extrastrap](https://www.npmjs.com/package/extrastrap)
 A small collection of Bootstrap-like utility classes made to extend your Bootstrap usage.
