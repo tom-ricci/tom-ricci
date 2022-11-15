@@ -1,5 +1,5 @@
 # Hey, I'm Thomas.
-I'm a 17 year old developer with experience in a variety of frontend and backend languages, frameworks, and libraries. Visit my [portfolio](https://www.thomasricci.dev) to learn more.
+I'm a student developer with experience in a variety of frontend and backend languages, frameworks, and libraries. Visit my [portfolio](https://www.thomasricci.dev) to learn more.
 # Experience
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
