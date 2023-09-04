@@ -20,7 +20,7 @@ I'm a student developer with experience in a variety of frontend and backend lan
 ### [Octobox](https://octobox.thomasricci.dev/)
 Octobox is a simple but powerful React meta-framework built in TypeScript.
 ### [FTC 19460](https://robotics.xbhs.net)
-I'm the Captain and Software Director of FTC  19460, a competitive robotics team based in Massachusetts.
+I was the Captain and Software Director of FTC 19460, a competitive robotics team based in Massachusetts.
 ### [Contributor](https://github.com/tom-ricci/contributor)
 A utility for adding more commits to your contribution table.
 ### [Extrastrap](https://www.npmjs.com/package/extrastrap)
