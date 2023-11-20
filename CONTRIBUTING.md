@@ -28,7 +28,14 @@ npm run start
 ```
 
 ### Building
-This should be taken care of by a CD workflow, however if needed the project can be built locally with:
+This should be taken care of by Cloudflare Pages, however if needed the project can be built locally with:
 ```bash
 npm run build
 ```
+
+### Notes
+This project is a little simple website using htmx and TailwindCSS. The tooling may be a bit much, however I'm doing it on purpose to force all dev environments to be the exact same. And so I can have continuous deployment.
+
+It's hosted on Cloudflare Pages at [tom-ricci.pages.dev](https://tom-ricci.pages.dev). I've also pointed all my personal portfolio domains to it (or, rather, will when it's done).
+
+Cloudflare Pages, as noted above, also takes care of building.
