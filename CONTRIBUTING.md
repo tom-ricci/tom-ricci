@@ -11,7 +11,7 @@ to get everything working and then restart the shell.
 
 Then, in the project directory, run:
 ```bash
-devbox generate direnv
+devbox generate direnv && direnv allow
 ```
 and then restart the shell again.
 
