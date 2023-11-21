@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "./src/index.html",
   "scripts": {
-    "bootstrap": "npm i && npm import",
+    "bootstrap": "npm i && npm run import",
     "htmx": "yes | cp -af node_modules/htmx.org/dist/htmx.js src/public",
     "css": "npx --yes tailwindcss -i ./src/style.css -o ./src/public/generated.css --watch &",
     "import": "npm i && npm run htmx && npm run css",
