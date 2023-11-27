@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "INTERNAL_SF";
+    src: url("/lib/SF-Pro.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "INTERNAL_NY";
+    src: url("/lib/NewYork.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "INTERNAL_JB";
+    src: url("/lib/JetBrainsMono-Regular.woff2") format("woff2");
+}
