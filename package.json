@@ -5,11 +5,11 @@
   "scripts": {
     "bootstrap": "npm i && npm run import",
     "htmx": "yes | cp -af node_modules/htmx.org/dist/htmx.js src/public",
-    "css": "npx --yes tailwindcss -i ./src/style.css -o ./src/public/generated.css --watch &",
+    "css": "npx --yes tailwindcss -i ./src/style.css -o ./src/public/generated.css --watch",
     "import": "npm i && npm run htmx && npm run css",
     "serve": "npx --yes serve src",
     "bundle": "yes | cp -af src/. dist",
-    "start": "npm run import && npm run serve",
+    "start": "concurrently -k 'npm run import' 'npm run serve'",
     "build": "npm run import && npm run bundle"
   },
   "repository": {
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/tom-ricci/tom-ricci#readme",
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "tailwindcss": "^3.3.5"
   },
   "dependencies": {
