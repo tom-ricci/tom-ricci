@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=500, initial-scale=1">
-  <title>Thomas Ricci - Home</title>
-  <link href="/public/generated.css" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=500, initial-scale=1">
+    <title>Thomas Ricci - Home</title>
+    <link href="/public/generated.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+  </head>
+  <body hx-boost="true" class="min-h-[100dvh] min-w-[100vw] h-full w-full bg-bg flex flex-row p-32">
+    <section class="w-[54%]">
+      <header>
+        <h1 class="font-sans text-gray headline">hey, i'm thomas</h1>
+      </header>
+      <main class="pt-16">
+        <p class="body text-gray text-justify">
+          Fusce imperdiet vestibulum malesuada. Mauris pretium egestas ante. Maecenas nec nibh elementum, egestas ligula quis, luctus est. Maecenas sagittis consectetur fringilla. Aenean a leo id lectus gravida semper. Nunc ligula augue, aliquet sit amet neque eget, dignissim bibendum erat. Pellentesque ipsum erat, consequat sed nisl vel, rutrum fermentum lectus. Aliquam erat volutpat. Nam accumsan risus viverra molestie consectetur. Fusce faucibus metus mauris, imperdiet ullamcorper lacus gravida sit amet. Pellentesque ullamcorper odio orci, non eleifend nisl tincidunt in. Sed eu lorem sit amet neque accumsan pharetra. Aenean imperdiet risus vel risus scelerisque, eu commodo tortor fermentum. Aliquam fermentum turpis a sem suscipit iaculis. Pellentesque rhoncus lobortis dolor at aliquam. Donec nisl enim, commodo sed lectus vel, vulputate gravida metus.
+        </p>
+      </main>
+      <nav class="pt-16">
+        <ul class="flex flex-row items-center justify-between">
+          <li class="border-blue border-4 rounded-full w-96 h-24 flex justify-center items-center px-10">
+            <span class="text-blue subheader">My Projects</span>
+            <span class="grow"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgb(0,122,255)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg>
+          </li>
+          <li class="border-blue border-4 rounded-full aspect-square h-24 flex justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgb(0,122,255)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </li>
+          <li class="border-blue border-4 rounded-full aspect-square h-24 flex justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgb(0,122,255)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </li>
+          <li class="border-blue border-4 rounded-full aspect-square h-24 flex justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgb(0,122,255)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </li>
+          <li class="border-blue border-4 rounded-full aspect-square h-24 flex justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgb(0,122,255)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </li>
+        </ul>
+      </nav>
+      <footer class="pt-16">
+        <p class="caption text-dark">Copyright © 2024 Thomas Ricci. Open-source under the MIT License.</p>
+      </footer>
+    </section>
+    <div class="w-32"></div>
+    <article class="border-blue border-4 border-dashed grow rounded-3xl" id="page">
 
-  <script src="/public/htmx.js"></script>
-</body>
+    </article>
+    <script src="/public/htmx.js"></script>
+  </body>
 </html>

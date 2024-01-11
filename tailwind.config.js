@@ -7,16 +7,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bg: "#2F2E41",
+        bg: "rgb(28,28,30)",
         red: "#E06C75",
         green: "#08C8B6",
-        blue: "#528BFF",
+        blue: "rgb(0,122,255)",
         purple: "#C678DD",
-        yellow: "#E5C07B"
+        yellow: "#E5C07B",
+        gray: "rgb(242,242,247)",
+        dark: "rgb(142,142,147)"
       },
       fontFamily: {
-        sans: ["INTERNAL_SF", ...defaultTheme.fontFamily.sans],
-        serif: ["INTERNAL_NY", ...defaultTheme.fontFamily.serif],
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        serif: ["Kameron", ...defaultTheme.fontFamily.serif],
         mono: ["INTERNAL_JB", ...defaultTheme.fontFamily.mono]
       },
       gridTemplateColumns: {
