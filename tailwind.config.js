@@ -5,6 +5,16 @@ let plugin = require('tailwindcss/plugin')
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    screens: {
+      xxs: '360px',
+      xs: '480px',
+      sm: '768px',
+      md: '1024px',
+      lg: '1536px',
+      xl: '1920px',
+      xxl: '2500px',
+      xxxl: '3840px'
+    },
     extend: {
       colors: {
         bg: "rgb(28,28,30)",
@@ -67,6 +77,16 @@ module.exports = {
     },
   },
   plugins: [
+    plugin(function({ addVariant }) {
+      addVariant("hover-focus-active", [ "&:hover", "&:focus", "&:active" ]);
+      addVariant("hover-focus", [ "&:hover", "&:focus" ]);
+      addVariant("hover-active", [ "&:hover", "&:active" ]);
+      addVariant("focus-active", [ "&:focus", "&:active" ]);
+      addVariant("group-hover-focus-active", [ ":merge(.group):hover &", ":merge(.group):focus &", ":merge(.group):active &" ])
+      addVariant("group-hover-focus", [ ":merge(.group):hover &", ":merge(.group):focus &" ])
+      addVariant("group-hover-active", [ ":merge(.group):hover &", ":merge(.group):active &" ])
+      addVariant("group-focus-active", [ ":merge(.group):focus &", ":merge(.group):active &" ])
+    }),
     plugin(function({ matchVariant }) {
       matchVariant("ar", (value) => `@media (min-aspect-ratio: ${value})`, {
         sort(a, z) {

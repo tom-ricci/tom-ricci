@@ -97,334 +97,102 @@
     @apply text-caption tracking-caption weight-body;
 }
 
-/*
 
-HOMEPAGE CSS
+.avatar {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
 
-Homepage Ratios (sorted in ascending order):
- 9/18 = 0.5000000000
- 9/16 = 0.5625000000
- 9/13 = 0.6923076923
- 9/10 = 0.9000000000
-  9/9 = 1.0000000000
- 10/9 = 1.1111111...
- 13/9 = 1.4444444...
- 16/9 = 1.7777777...
-31/18 = 1.7222222...
- 18/9 = 1.5000000000
+.avatar::before,
+.avatar::after {
+    --scale: 0;
+    --arrow-size: 20px;
+    --tooltip-color: green;
 
- */
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+}
 
-/*
+.avatar::before {
+    --translate-y: calc(-100% - var(--arrow-size));
 
-get desired padding
-see if it * 2 is > the width or the height
-if it is, we use optimal
-if not, use desired
+    content: attr(data-tooltip);
+    color: white;
+    padding: .5rem;
+    border-radius: .3rem;
+    text-align: center;
+    width: max-content;
+    max-width: 100%;
+    background: var(--tooltip-color);
+}
 
+.avatar:hover::before,
+.avatar:hover::after {
+    --scale: 1;
+}
 
-if we use min, we
+.avatar::after {
+    --translate-y: calc(-1 * var(--arrow-size));
 
-if padding * 2 + width > vh OR
-if padding * 2 + height > vw
+    content: '';
+    border: var(--arrow-size) solid transparent;
+    border-top-color: var(--tooltip-color);
+    transform-origin: top center;
+}
 
-    use optimal
+:root {
+    font-size: 16px !important;
+}
 
-else
+@media screen("xxs") {
+    :root {
+        font-size: 16px !important;
+    }
+}
 
-    use desired
+@media screen("xs") {
+    :root {
+        font-size: 16px !important;
+    }
+}
 
-optimal = calc(calc(min(100vw, 100vh) - 100%) / 2)
-optimal * 2 = calc(min(100vw, 100vh) - 100%)
+@media screen("sm") {
+    :root {
+        font-size: 16px !important;
+    }
+}
 
-2optimal w = calc(100vw - 100%)
-2optimal h = calc(100vh - 100%)
+@media screen("md") {
+    :root {
+        font-size: 16px !important;
+    }
+}
 
-min is pad * 2 + wid
-max is desired pad
+@media screen("lg") {
+    :root {
+        font-size: 16px !important;
+    }
+}
 
-pad is min of above wid and above height
+@media screen("xl") {
+    :root {
+        font-size: 16px !important;
+    }
+}
 
-min(calc(padding * 2 + 100%)
+@media screen("xxl") {
+    :root {
+        font-size: 16px !important;
+    }
+}
 
-
-(padding * 2 - 100%) / 2
-
-min(calc((padding * 2 - 100%) / 2), padding)
-
- */
-
-/*.home-container {*/
-/*    padding: calc(0.164779 * min(100vh, 100vw));*/
-/*}*/
-
-/*.hp0{padding: max(calc(calc(min(100vw, 100vh) - 100%) / 2),              0*/
-/*);}.hp1{padding: max(calc(calc(min(100vw, 100vh) - 100%) / 2),           0*/
-/*);}.hp2{padding: max(calc(calc(min(100vw, 100vh) - 100%) / 2),           2.5rem*/
-/*);}.hp3{padding: max(calc(calc(min(100vw, 100vh) - 100%) / 2),           5rem*/
-/*);}.hp4{padding: max(calc(calc(min(100vw, 100vh) - 100%) / 2),           8%*/
-/*);}.hp5{padding: max(calc(calc(min(100vw, 100vh) - 100%) / 2),           10rem*/
-/*);}.hp6{padding: max(calc(calc(min(100vw, 100vh) - 100%) / 2),           10rem*/
-/*);}.hp7{padding: max(calc(calc(min(100vw, 100vh) - 100%) / 2),           5rem*/
-/*);}.hp8{padding: max(calc(calc(min(100vw, 100vh) - 100%) / 2),           2.5rem*/
-/*);}                                !* 1/0 *!.home-container {@apply hp0;}*/
-/*@media screen and  (min-aspect-ratio: 9/16) {.home-container {@apply hp1;}}*/
-/*@media screen and  (min-aspect-ratio: 9/13) {.home-container {@apply hp2;}}*/
-/*@media screen and  (min-aspect-ratio: 9/10) {.home-container {@apply hp3;}}*/
-/*@media screen and  (min-aspect-ratio: 9/9) {.home-container {@apply hp4;}}*/
-/*@media screen and (min-aspect-ratio: 10/9) {.home-container {@apply hp5;}}*/
-/*@media screen and (min-aspect-ratio: 13/9) {.home-container {@apply hp6;}}*/
-/*@media screen and (min-aspect-ratio: 31/18) {.home-container {@apply hp7;}}*/
-/*@media screen and (min-aspect-ratio: 18/9) {.home-container {@apply hp8;}}*/
-/*.home{@apply grid grid-cols-9 grid-rows-18 h-full w-full aspect-[18/9];}.home .header {@apply*/
-/*    !*BLUE*!*/
-/*col-start-[1]*/
-/*row-start-[1]*/
-/*col-end-[10]*/
-/*row-end-[7];                                                         }.home .nav {@apply*/
-/*    !*PURPLE*!*/
-/*col-start-[1]*/
-/*row-start-[7]*/
-/*col-end-[10]*/
-/*row-end-[13];                                                        }.home .article-1:first-of-type {@apply*/
-/*    !*GREEN*!*/
-/*col-start-[1]*/
-/*row-start-[13]*/
-/*col-end-[10]*/
-/*row-end-[19];                                                        }.home .article-2:last-of-type {@apply*/
-/*    !*YELLOW*!*/
-/*col-start-[10] w-0*/
-/*row-start-[13]*/
-/*col-end-[9]*/
-/*row-end-[19];                                                        }.home .li-1:nth-of-type(1) {@apply*/
-/*    !*RED 1*!*/
-/*col-start-[10] w-0*/
-/*row-start-[1]*/
-/*col-end-[9]*/
-/*row-end-[4];                                                         }.home .li-2:nth-of-type(2) {@apply*/
-/*    !*RED 2*!*/
-/*col-start-[10] w-0*/
-/*row-start-[4]*/
-/*col-end-[9]*/
-/*row-end-[7];                                                         }.home .li-3:nth-of-type(3) {@apply*/
-/*    !*RED 3*!*/
-/*col-start-[10] w-0*/
-/*row-start-[7]*/
-/*col-end-[9]*/
-/*row-end-[10];                                                        }@media screen and*/
-/*(min-aspect-ratio: 9/16){.home{@apply grid grid-cols-9 grid-rows-16 h-full aspect-[18/9];}.home .header {@apply*/
-/*    !*BLUE*!*/
-/*col-start-[1]*/
-/*row-start-[1]*/
-/*col-end-[10]*/
-/*row-end-[6];                                                         }.home .nav {@apply*/
-/*    !*PURPLE*!*/
-/*col-start-[6]*/
-/*row-start-[6]*/
-/*col-end-[10]*/
-/*row-end-[13];                                                        }.home .article-1:first-of-type {@apply*/
-/*    !*GREEN*!*/
-/*col-start-[1]*/
-/*row-start-[6]*/
-/*col-end-[6]*/
-/*row-end-[19];                                                        }.home .article-2:last-of-type {@apply*/
-/*    !*YELLOW*!*/
-/*col-start-[6] w-full*/
-/*row-start-[13]*/
-/*col-end-[10]*/
-/*row-end-[19];                                                        }.home .li-1:nth-of-type(1) {@apply*/
-/*    !*RED 1*!*/
-/*col-start-[10] w-0*/
-/*row-start-[1]*/
-/*col-end-[9]*/
-/*row-end-[4];                                                         }.home .li-2:nth-of-type(2) {@apply*/
-/*    !*RED 2*!*/
-/*col-start-[10] w-0*/
-/*row-start-[4]*/
-/*col-end-[9]*/
-/*row-end-[7];                                                         }.home .li-3:nth-of-type(3) {@apply*/
-/*    !*RED 3*!*/
-/*col-start-[10] w-0*/
-/*row-start-[7]*/
-/*col-end-[9]*/
-/*row-end-[10];                                                        }}@media screen and*/
-/*(min-aspect-ratio: 9/13){.home{@apply grid grid-cols-9 grid-rows-16 h-full aspect-[16/9];}.home .header {@apply*/
-/*    !*BLUE*!*/
-/*col-start-[1]*/
-/*row-start-[1]*/
-/*col-end-[10]*/
-/*row-end-[5];                                                         }.home .nav {@apply*/
-/*    !*PURPLE*!*/
-/*col-start-[6]*/
-/*row-start-[5]*/
-/*col-end-[10]*/
-/*row-end-[11];                                                        }.home .article-1:first-of-type {@apply*/
-/*    !*GREEN*!*/
-/*col-start-[1]*/
-/*row-start-[5]*/
-/*col-end-[6]*/
-/*row-end-[17];                                                        }.home .article-2:last-of-type {@apply*/
-/*    !*YELLOW*!*/
-/*col-start-[6]*/
-/*row-start-[11]*/
-/*col-end-[10]*/
-/*row-end-[17];                                                        }.home .li-1:nth-of-type(1) {@apply*/
-/*    !*RED 1*!*/
-/*col-start-[10] w-0*/
-/*row-start-[1]*/
-/*col-end-[9]*/
-/*row-end-[4];                                                         }.home .li-2:nth-of-type(2) {@apply*/
-/*    !*RED 2*!*/
-/*col-start-[10] w-0*/
-/*row-start-[4]*/
-/*col-end-[9]*/
-/*row-end-[7];                                                         }.home .li-3:nth-of-type(3) {@apply*/
-/*    !*RED 3*!*/
-/*col-start-[10] w-0*/
-/*row-start-[7]*/
-/*col-end-[9]*/
-/*row-end-[10];                                                        }}@media screen and*/
-/*(min-aspect-ratio: 9/10){.home{@apply grid grid-cols-9 grid-rows-13 h-full aspect-[13/9];}.home .header {@apply*/
-/*    !*BLUE*!*/
-/*col-start-[1]*/
-/*row-start-[1]*/
-/*col-end-[10]*/
-/*row-end-[5];                                                         }.home .nav {@apply*/
-/*    !*PURPLE*!*/
-/*col-start-[6]*/
-/*row-start-[5]*/
-/*col-end-[10]*/
-/*row-end-[14];                                                        }.home .article-1:first-of-type {@apply*/
-/*    !*GREEN*!*/
-/*col-start-[1]*/
-/*row-start-[5]*/
-/*col-end-[6]*/
-/*row-end-[11];                                                        }.home .article-2:last-of-type {@apply*/
-/*    !*YELLOW*!*/
-/*col-start-[1]*/
-/*row-start-[11]*/
-/*col-end-[6]*/
-/*row-end-[14];                                                        }.home .li-1:nth-of-type(1) {@apply*/
-/*    !*RED 1*!*/
-/*col-start-[10] w-0*/
-/*row-start-[1]*/
-/*col-end-[9]*/
-/*row-end-[4];                                                         }.home .li-2:nth-of-type(2) {@apply*/
-/*    !*RED 2*!*/
-/*col-start-[10] w-0*/
-/*row-start-[4]*/
-/*col-end-[9]*/
-/*row-end-[7];                                                         }.home .li-3:nth-of-type(3) {@apply*/
-/*    !*RED 3*!*/
-/*col-start-[10] w-0*/
-/*row-start-[7]*/
-/*col-end-[9]*/
-/*row-end-[10];                                                        }}@media screen and*/
-/*(min-aspect-ratio: 9/9){.home{@apply grid grid-cols-9 grid-rows-9 w-full aspect-[9/9];}.home .header {@apply*/
-/*    !*BLUE*!*/
-/*col-start-[1] w-full*/
-/*row-start-[1]*/
-/*col-end-[5]*/
-/*row-end-[10];                                                        }.home .nav {@apply*/
-/*    !*PURPLE*!*/
-/*col-start-[5] w-full*/
-/*row-start-[1]*/
-/*col-end-[10]*/
-/*row-end-[5];                                                         }.home .article-1:first-of-type {@apply*/
-/*    !*GREEN*!*/
-/*col-start-[5] w-full*/
-/*row-start-[5]*/
-/*col-end-[10]*/
-/*row-end-[10];                                                        }.home .article-2:last-of-type {@apply*/
-/*    !*YELLOW*!*/
-/*col-start-[10] w-0*/
-/*row-start-[4]*/
-/*col-end-[9]*/
-/*row-end-[4];                                                        }.home .li-1:nth-of-type(1) {@apply*/
-/*    !*RED 1*!*/
-/*col-start-[10] w-0*/
-/*row-start-[1]*/
-/*col-end-[9]*/
-/*row-end-[1];                                                         }.home .li-2:nth-of-type(2) {@apply*/
-/*    !*RED 2*!*/
-/*col-start-[10] w-0*/
-/*row-start-[4]*/
-/*col-end-[9]*/
-/*row-end-[4];                                                         }.home .li-3:nth-of-type(3) {@apply*/
-/*    !*RED 3*!*/
-/*col-start-[10] w-0*/
-/*row-start-[7]*/
-/*col-end-[9]*/
-/*row-end-[7];                                                        }}@media screen and*/
-/*(min-aspect-ratio: 10/9){.home{@apply grid grid-cols-13 grid-rows-9 w-full aspect-[13/9];}.home .header {@apply*/
-/*    !*BLUE*!*/
-/*col-start-[1] w-full*/
-/*row-start-[1]*/
-/*col-end-[5]*/
-/*row-end-[10];                                                        }.home .nav {@apply*/
-/*    !*PURPLE*!*/
-/*col-start-[5] w-full*/
-/*row-start-[1]*/
-/*col-end-[14]*/
-/*row-end-[4];                                                         }.home .article-1:first-of-type {@apply*/
-/*    !*GREEN*!*/
-/*col-start-[5] w-full*/
-/*row-start-[4]*/
-/*col-end-[11]*/
-/*row-end-[10];                                                        }.home .article-2:last-of-type {@apply*/
-/*    !*YELLOW*!*/
-/*col-start-[11] w-full*/
-/*row-start-[4]*/
-/*col-end-[14]*/
-/*row-end-[10];                                                        }.home .li-1:nth-of-type(1) {@apply*/
-/*    !*RED 1*!*/
-/*col-start-[14] w-0*/
-/*row-start-[1]*/
-/*col-end-[13]*/
-/*row-end-[1];                                                         }.home .li-2:nth-of-type(2) {@apply*/
-/*    !*RED 2*!*/
-/*col-start-[14] w-0*/
-/*row-start-[4]*/
-/*col-end-[13]*/
-/*row-end-[4];                                                         }.home .li-3:nth-of-type(3) {@apply*/
-/*    !*RED 3*!*/
-/*col-start-[14] w-0*/
-/*row-start-[7]*/
-/*col-end-[13]*/
-/*row-end-[7];                                                        }}@media screen and*/
-/*(min-aspect-ratio: 13/9){.home {@apply grid grid-cols-16 grid-rows-9 aspect-[16/9];}.home .header {@apply*/
-/*    !*BLUE*!*/
-/*col-start-[1] w-full*/
-/*row-start-[1]*/
-/*col-end-[5]*/
-/*row-end-[10];                                                        }.home .nav {@apply*/
-/*    !*PURPLE*!*/
-/*col-start-[5] w-full*/
-/*row-start-[1]*/
-/*col-end-[14]*/
-/*row-end-[4];                                                         }.home .article-1:first-of-type {@apply*/
-/*    !*GREEN*!*/
-/*col-start-[5] w-full*/
-/*row-start-[4]*/
-/*col-end-[11]*/
-/*row-end-[10];                                                        }.home .article-2:last-of-type {@apply*/
-/*    !*YELLOW*!*/
-/*col-start-[11] w-full*/
-/*row-start-[4]*/
-/*col-end-[14]*/
-/*row-end-[10];                                                        }.home .li-1:nth-of-type(1) {@apply*/
-/*    !*RED 1*!*/
-/*col-start-[14] w-full*/
-/*row-start-[1]*/
-/*col-end-[17]*/
-/*row-end-[4];                                                         }.home .li-2:nth-of-type(2) {@apply*/
-/*    !*RED 2*!*/
-/*col-start-[14] w-full*/
-/*row-start-[4]*/
-/*col-end-[17]*/
-/*row-end-[7];                                                         }.home .li-3:nth-of-type(3) {@apply*/
-/*    !*RED 3*!*/
-/*col-start-[14] w-full*/
-/*row-start-[7]*/
-/*col-end-[17]*/
-/*row-end-[10];                                                        }}*/
+@media screen("xxxl") {
+    :root {
+        font-size: 16px !important;
+    }
+}
