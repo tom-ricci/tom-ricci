@@ -6,13 +6,18 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     screens: {
-      xxs: '360px',
-      xs: '480px',
-      sm: '768px',
-      md: '1024px',
-      lg: '1536px',
+      xxxxxxxs: '320px',
+      xxxxxxs: '332px',
+      xxxxxs: '360px',
+      xxxxs: '416px',
+      xxxs: '480px',
+      xxs: '650px',
+      xs: '814px',
+      sm: '1014px',
+      md: '1200px',
+      lg: '1634px',
       xl: '1920px',
-      xxl: '2500px',
+      xxl: '2300px',
       xxxl: '3840px'
     },
     extend: {

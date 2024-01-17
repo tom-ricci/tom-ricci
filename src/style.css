@@ -18,7 +18,7 @@
 }
 
 .text-headline {
-    @apply text-9xl;
+    @apply text-7xl;
 }
 
 .tracking-headline {
@@ -30,7 +30,7 @@
 }
 
 .headline {
-    @apply text-headline tracking-headline weight-headline
+    @apply text-headline tracking-headline weight-headline;
 }
 
 .text-header {
@@ -97,56 +97,39 @@
     @apply text-caption tracking-caption weight-body;
 }
 
-
-.avatar {
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.avatar::before,
-.avatar::after {
-    --scale: 0;
-    --arrow-size: 20px;
-    --tooltip-color: green;
-
-    position: absolute;
-    top: -.25rem;
-    left: 50%;
-    transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
-    transition: 150ms transform;
-    transform-origin: bottom center;
-}
-
-.avatar::before {
-    --translate-y: calc(-100% - var(--arrow-size));
-
-    content: attr(data-tooltip);
-    color: white;
-    padding: .5rem;
-    border-radius: .3rem;
-    text-align: center;
-    width: max-content;
-    max-width: 100%;
-    background: var(--tooltip-color);
-}
-
-.avatar:hover::before,
-.avatar:hover::after {
-    --scale: 1;
-}
-
-.avatar::after {
-    --translate-y: calc(-1 * var(--arrow-size));
-
-    content: '';
-    border: var(--arrow-size) solid transparent;
-    border-top-color: var(--tooltip-color);
-    transform-origin: top center;
-}
-
 :root {
-    font-size: 16px !important;
+    font-size: 10px !important;
+}
+
+@media screen("xxxxxxxs") {
+    :root {
+        font-size: 10px !important;
+    }
+}
+
+
+@media screen("xxxxxxs") {
+    :root {
+        font-size: 11px !important;
+    }
+}
+
+@media screen("xxxxxs") {
+    :root {
+        font-size: 12px !important;
+    }
+}
+
+@media screen("xxxxs") {
+    :root {
+        font-size: 14px !important;
+    }
+}
+
+@media screen("xxxs") {
+    :root {
+        font-size: 16px !important;
+    }
 }
 
 @media screen("xxs") {
@@ -165,17 +148,25 @@
     :root {
         font-size: 16px !important;
     }
+
+    .text-headline {
+        @apply text-8xl;
+    }
 }
 
 @media screen("md") {
     :root {
         font-size: 16px !important;
     }
+
+    .text-headline {
+        @apply text-9xl;
+    }
 }
 
 @media screen("lg") {
     :root {
-        font-size: 16px !important;
+        font-size: 14px !important;
     }
 }
 
@@ -187,12 +178,12 @@
 
 @media screen("xxl") {
     :root {
-        font-size: 16px !important;
+        font-size: 18px !important;
     }
 }
 
 @media screen("xxxl") {
     :root {
-        font-size: 16px !important;
+        font-size: 32px !important;
     }
 }
