@@ -143,15 +143,12 @@
 
       const resizeObserver = new ResizeObserver((entries) => {
         const desktop = swap();
-        const homeChanged = entries.find(entry => entry.target.id === "home") !== undefined;
-        if(desktop && homeChanged) {
-          document.getElementById("desktopPageContainer").style.height = document.getElementById("home").clientHeight + "px";
+        if(desktop) {
         } else if(!desktop && document.getElementById("desktopPageContainer").style.height !== "") {
           document.getElementById("desktopPageContainer").style.height = "";
         }
-        if(!desktop) {
-          document.getElementById("mobilePageContainer").style.height = document.body.clientHeight + "px";
-        }
+        document.getElementById("desktopPageContainer").style.height = document.getElementById("home").clientHeight + "px";
+        document.getElementById("mobilePageContainer").style.height = document.body.clientHeight + "px";
       });
 
       swap();
