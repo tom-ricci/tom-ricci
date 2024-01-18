@@ -19,7 +19,7 @@
       </section>
     </noscript>
     <div class="flex flex-row items-center min-h-fit lg:w-full max-w-[1776px] xxl:max-w-[1948px] xxxl:max-w-[3696px]">
-      <div class="lg:mx-0 w-full md:px-0 md:w-[60.05rem] h-fit" id="home">
+      <div class="lg:mx-0 w-full md:px-0 md:!w-[60.05rem] h-fit shrink-0 cursor-default" id="home">
         <header>
           <h1 class="font-sans text-gray headline">hey,<br class="xs:hidden"/> i'm thomas</h1>
         </header>
@@ -32,11 +32,16 @@
             <span class="hidden xs:inline">
                currently pursuing a dual-major for a Bachelor's degree in Computer Science and Robotics Engineering at WPI.
             </span>
-            I’ve been programming since 2017 and have experience with Java, Kotlin, TypeScript, Racket, C and C++, Nix, Python, React, HTMX, TailwindCSS, Node.js, Bash and many other technologies.
+            <span id="langs">
+              I’ve been programming since 2017 and have experience with Java, Kotlin, TypeScript, Racket, C and C++, Nix, Python, React, HTMX, TailwindCSS, Node.js, Bash and many other technologies.
+            </span>
             <span class="hidden xs:inline">
               I have experience working with teams, leading teams, and developing solo projects. I also give informal technical advice to leaders of other teams.
             </span>
-            Right now I'm looking for SWE internships in the software and robotics industries for the summer of 2024, and I'm working on my cloud management system for bare-metal and IaaS, <a href="https://deploy.nexus" class="text-blue">Nexus</a>. Contact me by sending me an email with the
+            <span id="current">
+              Right now I'm looking for SWE internships in the software and robotics industries for the summer of 2024, and I'm working on my cloud management system for bare-metal and IaaS, <a href="https://deploy.nexus" class="text-blue">Nexus</a>.
+            </span>
+            Contact me by sending me an email with the
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 inline-block">
               <path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
               <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
@@ -116,8 +121,8 @@
           <p class="caption text-dark">Copyright © 2024 Thomas Ricci. Open-source under the MIT License.</p>
         </footer>
       </div>
-      <div class="lg:w-32"></div>
-      <div id="desktopPageContainer" class="hidden lg:block lg:grow">
+      <div class="lg:w-32 shrink-0"></div>
+      <div id="desktopPageContainer" class="hidden lg:flex lg:grow">
         <article class="border-blue border-[0.25rem] border-dashed rounded-3xl h-full w-full" data-display="desktop"></article>
       </div>
       <dialog id="mobilePageContainer" class="open:absolute open:top-0 open:left-0 open:h-full open:w-full bg-blue">

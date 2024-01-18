@@ -97,6 +97,66 @@
     @apply text-caption tracking-caption weight-body;
 }
 
+.projects li:first-child {
+    @apply mt-0;
+}
+
+.projects li {
+    @apply mt-8;
+}
+
+::selection {
+    background: #28282B;
+}
+::-moz-selection {
+    background: #28282B;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #28282B rgb(28,28,30);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgb(28,28,30);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #28282B;
+    border-radius: 9999px;
+    border: 0.25rem solid rgb(28,28,30);
+}
+
+/* Firefox */
+.blue-scroller {
+    scrollbar-width: auto;
+    scrollbar-color: #4DA2FF rgb(0,122,255);
+}
+
+/* Chrome, Edge, and Safari */
+.blue-scroller::-webkit-scrollbar {
+    width: 1rem;
+}
+
+.blue-scroller::-webkit-scrollbar-track {
+    background: rgb(0,122,255);
+}
+
+.blue-scroller::-webkit-scrollbar-thumb {
+    background-color: #4DA2FF;
+    border-radius: 9999px;
+    border: 0.25rem solid rgb(0,122,255);
+}
+
+/* SCROLLBAR END */
+
 :root {
     font-size: 10px !important;
 }

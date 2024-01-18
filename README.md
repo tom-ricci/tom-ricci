@@ -1,3 +1,5 @@
+<!-- FOR DEVELOPMENT README, SEE CONTRIBUTING.MD -->
+
 # Hey, I'm Thomas.
 I'm a student developer with experience in a variety of frontend and backend languages, frameworks, and libraries. Visit my [portfolio](https://www.thomasricci.dev) to learn more.
 # Experience
