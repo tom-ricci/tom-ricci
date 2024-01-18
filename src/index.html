@@ -179,6 +179,11 @@
           console.log("overflow hidden!");
         }
       });
+
+      const copyBtn = () => {
+        navigator.clipboard.writeText(`<a href="https://www.thomasricci.dev"><img src="https://button.thomasricci.dev/button.png" alt="My Button" class="web1"></a>`);
+        alert("Copied!");
+      }
     </script>
     <script src="/public/htmx.js"></script>
     <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>

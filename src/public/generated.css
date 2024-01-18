@@ -560,12 +560,20 @@ video {
   left: 0.5rem;
 }
 
+.left-\[1\.23rem\]{
+  left: 1.23rem;
+}
+
 .top-0{
   top: 0px;
 }
 
 .top-2{
   top: 0.5rem;
+}
+
+.top-\[2\.25rem\]{
+  top: 2.25rem;
 }
 
 .top-\[6\.75rem\]{
@@ -626,6 +634,10 @@ video {
 
 .h-2{
   height: 0.5rem;
+}
+
+.h-20{
+  height: 5rem;
 }
 
 .h-24{
@@ -712,6 +724,11 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.translate-y-2{
+  --tw-translate-y: 0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 @keyframes pulse{
   50%{
     opacity: .5;
@@ -758,12 +775,20 @@ video {
   gap: 0.5rem;
 }
 
+.gap-4{
+  gap: 1rem;
+}
+
 .overflow-auto{
   overflow: auto;
 }
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
 }
 
 .rounded-3xl{
@@ -1091,6 +1116,18 @@ video {
   background: #28282B;
 }
 
+article ::-moz-selection {
+  background: #4DA2FF;
+}
+
+article ::selection {
+  background: #4DA2FF;
+}
+
+article ::-moz-selection {
+  background: #4DA2FF;
+}
+
 /* need this b/c it's applied with js and tw doesnt like that */
 
 .nooverflow {
@@ -1099,6 +1136,19 @@ video {
 
 * {
   -webkit-tap-highlight-color: transparent;
+}
+
+.web1 {
+  width: 5.5rem;
+  height: 1.9375rem;
+}
+
+.web1-w {
+  width: 5.5rem;
+}
+
+.web1-h {
+  height: 1.9375rem;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -1314,6 +1364,14 @@ video {
 }
 
 @media (min-width: 650px){
+  .xxs\:mt-\[4\.25rem\]{
+    margin-top: 4.25rem;
+  }
+
+  .xxs\:block{
+    display: block;
+  }
+
   .xxs\:px-32{
     padding-left: 8rem;
     padding-right: 8rem;

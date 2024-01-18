@@ -112,6 +112,13 @@
     background: #28282B;
 }
 
+article ::selection {
+    background: #4DA2FF;
+}
+article ::-moz-selection {
+    background: #4DA2FF;
+}
+
 /* need this b/c it's applied with js and tw doesnt like that */
 .nooverflow {
     overflow: hidden;
@@ -119,6 +126,18 @@
 
 * {
     -webkit-tap-highlight-color: transparent;
+}
+
+.web1 {
+    @apply web1-h web1-w;
+}
+
+.web1-w {
+    width: 5.5rem;
+}
+
+.web1-h {
+    height: 1.9375rem;
 }
 
 /* ===== Scrollbar CSS ===== */
