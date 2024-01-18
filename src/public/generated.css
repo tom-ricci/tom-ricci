@@ -782,6 +782,10 @@ video {
   border-width: 0.25rem;
 }
 
+.border-b-0{
+  border-bottom-width: 0px;
+}
+
 .border-solid{
   border-style: solid;
 }
@@ -842,6 +846,10 @@ video {
 
 .pt-12{
   padding-top: 3rem;
+}
+
+.pt-6{
+  padding-top: 1.5rem;
 }
 
 .text-justify{
@@ -1083,52 +1091,64 @@ video {
   background: #28282B;
 }
 
-/* ===== Scrollbar CSS ===== */
+/* need this b/c it's applied with js and tw doesnt like that */
 
-/* Firefox */
+.nooverflow {
+  overflow: hidden;
+}
 
 * {
-  scrollbar-width: auto;
-  scrollbar-color: #28282B rgb(28,28,30);
+  -webkit-tap-highlight-color: transparent;
 }
 
-/* Chrome, Edge, and Safari */
+/* ===== Scrollbar CSS ===== */
 
-*::-webkit-scrollbar {
-  width: 1rem;
-}
+@media not all and (pointer: none), (pointer: coarse) {
+  /* Firefox */
 
-*::-webkit-scrollbar-track {
-  background: rgb(28,28,30);
-}
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #28282B rgb(28,28,30);
+  }
 
-*::-webkit-scrollbar-thumb {
-  background-color: #28282B;
-  border-radius: 9999px;
-  border: 0.25rem solid rgb(28,28,30);
-}
+  /* Chrome, Edge, and Safari */
 
-/* Firefox */
+  *::-webkit-scrollbar {
+    width: 1rem;
+  }
 
-.blue-scroller {
-  scrollbar-width: auto;
-  scrollbar-color: #4DA2FF rgb(0,122,255);
-}
+  *::-webkit-scrollbar-track {
+    background: rgb(28,28,30);
+  }
 
-/* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar-thumb {
+    background-color: #28282B;
+    border-radius: 9999px;
+    border: 0.25rem solid rgb(28,28,30);
+  }
 
-.blue-scroller::-webkit-scrollbar {
-  width: 1rem;
-}
+  /* Firefox */
 
-.blue-scroller::-webkit-scrollbar-track {
-  background: rgb(0,122,255);
-}
+  .blue-scroller {
+    scrollbar-width: auto;
+    scrollbar-color: #4DA2FF rgb(0,122,255);
+  }
 
-.blue-scroller::-webkit-scrollbar-thumb {
-  background-color: #4DA2FF;
-  border-radius: 9999px;
-  border: 0.25rem solid rgb(0,122,255);
+  /* Chrome, Edge, and Safari */
+
+  .blue-scroller::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  .blue-scroller::-webkit-scrollbar-track {
+    background: rgb(0,122,255);
+  }
+
+  .blue-scroller::-webkit-scrollbar-thumb {
+    background-color: #4DA2FF;
+    border-radius: 9999px;
+    border: 0.25rem solid rgb(0,122,255);
+  }
 }
 
 /* SCROLLBAR END */
@@ -1388,6 +1408,14 @@ video {
 
   .lg\:grow{
     flex-grow: 1;
+  }
+
+  .lg\:border-b-4{
+    border-bottom-width: 4px;
+  }
+
+  .lg\:pb-6{
+    padding-bottom: 1.5rem;
   }
 }
 
