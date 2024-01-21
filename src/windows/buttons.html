@@ -1,7 +1,7 @@
 <article class="border-blue border-4 border-solid grow rounded-3xl p-6 px-9 bg-blue text-gray h-full w-full flex flex-col relative" id="page" _="on load add @open to the closest <dialog/> finally send needscroll to the body then wait 300ms then call #buttons's blur()">
   <div class="flex flex-row justify-between">
     <h2 class="header align-text-top cursor-default">extras</h2>
-    <button name="Close" hx-get="/windows/empty.html" hx-target="closest <article/>" hx-swap="outerHTML transition:true" id="close">
+    <button aria-label="Close" hx-get="/windows/empty.html" hx-target="closest <article/>" hx-swap="outerHTML transition:true" id="close">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-11 h-11">
         <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM8.28 7.22a.75.75 0 0 0-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 1 0 1.06 1.06L10 11.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L11.06 10l1.72-1.72a.75.75 0 0 0-1.06-1.06L10 8.94 8.28 7.22Z" clip-rule="evenodd" />
       </svg>
@@ -13,7 +13,7 @@
         <a href="https://lastsunrise.art"><img src="https://lastsunrise.neocities.org/images/mybutton.gif" alt="Last Sunrise Button" class="web1"></a>
         <a href="https://npm-i.neocities.org/"><img src="https://npm-i.neocities.org/buttons/octobuton.gif" alt="Octo Button" class="web1"></a>
         <a href="https://htmx.org"><img src="/img/htmx.png" alt="HTMX Button" class="web1-h"></a>
-        <button name="Copy my button" onclick="copyBtn()"><img src="https://button.thomasricci.dev/button.png" alt="My Button" class="hidden xxs:block web1"></button>
+        <button aria-label="Copy my button" onclick="copyBtn()"><img src="https://button.thomasricci.dev/button.png" alt="My Button" class="hidden xxs:block web1"></button>
         <span class="absolute hidden xxs:block top-[2.25rem] left-[1.23rem] w-full h-20 caption cursor-default">
           <em class="inline-block translate-y-2 text-gray">Click my button to copy it to the clipboard</em>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-corner-right-up inline-block"><polyline points="10 9 15 4 20 9"></polyline><path d="M4 20h7a4 4 0 0 0 4-4V4"></path></svg>
