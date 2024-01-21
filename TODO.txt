@@ -1,6 +1,5 @@
 TODO:
  - Lighthouse & Pagespeed
- - Push to main
  - Archive www.thomasricci.dev, thomasricci.dev, portfolio-4fi.pages.dev to wayback & archive.is
  - Update portfolio to a link pointing to www.thomasricci.dev
  - Archive www.thomasricci.dev, thomasricci.dev, portfolio-4fi.pages.dev to wayback & archive.is
