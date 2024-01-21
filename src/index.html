@@ -92,7 +92,7 @@
           <ul class="
           flex flex-row items-center justify-evenly xs:justify-between">
             <li class="aspect-square sm:w-96 h-24 flex justify-center items-center">
-              <button hx-get="/windows/projects.html" hx-target="#page" hx-swap="outerHTML transition:true" class="w-full h-full border-blue border-4 rounded-full sm:px-10 flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none" id="projects">
+              <button name="My Projects" hx-get="/windows/projects.html" hx-target="#page" hx-swap="outerHTML transition:true" class="w-full h-full border-blue border-4 rounded-full sm:px-10 flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none" id="projects">
                 <span class="hidden sm:block text-blue group-hover-focus:text-gray transition-colors subheader !font-semibold">My Projects</span>
                 <span class="hidden sm:block grow"></span>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="hidden sm:block w-9 h-9 fill-blue group-hover-focus:fill-gray transition-colors">
@@ -104,7 +104,7 @@
               </button>
             </li>
             <li class="aspect-square h-24 flex justify-center items-center">
-              <a href="mailto:me@thomasricci.dev" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none">
+              <a aria-label="Email me" href="mailto:me@thomasricci.dev" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-9 h-9 fill-blue group-hover-focus:fill-gray transition-colors">
                   <path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
                   <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
@@ -112,14 +112,14 @@
               </a>
             </li>
             <li class="aspect-square h-24 hidden xs:flex justify-center items-center">
-              <a href="https://github.thomasricci.dev" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none">
+              <a aria-label="My GitHub" href="https://github.thomasricci.dev" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-9 h-9 fill-blue group-hover-focus:fill-gray transition-colors">
                   <path fill-rule="evenodd" d="M4.25 2A2.25 2.25 0 0 0 2 4.25v11.5A2.25 2.25 0 0 0 4.25 18h11.5A2.25 2.25 0 0 0 18 15.75V4.25A2.25 2.25 0 0 0 15.75 2H4.25Zm4.03 6.28a.75.75 0 0 0-1.06-1.06L4.97 9.47a.75.75 0 0 0 0 1.06l2.25 2.25a.75.75 0 0 0 1.06-1.06L6.56 10l1.72-1.72Zm4.5-1.06a.75.75 0 1 0-1.06 1.06L13.44 10l-1.72 1.72a.75.75 0 1 0 1.06 1.06l2.25-2.25a.75.75 0 0 0 0-1.06l-2.25-2.25Z" clip-rule="evenodd" />
                 </svg>
               </a>
             </li>
             <li class="aspect-square h-24 flex justify-center items-center">
-              <a href="https://linkedin.thomasricci.dev" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none">
+              <a aria-label="My LinkedIn" href="https://linkedin.thomasricci.dev" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-9 h-9 fill-blue group-hover-focus:fill-gray transition-colors">
                   <path fill-rule="evenodd" d="M6 3.75A2.75 2.75 0 0 1 8.75 1h2.5A2.75 2.75 0 0 1 14 3.75v.443c.572.055 1.14.122 1.706.2C17.053 4.582 18 5.75 18 7.07v3.469c0 1.126-.694 2.191-1.83 2.54-1.952.599-4.024.921-6.17.921s-4.219-.322-6.17-.921C2.694 12.73 2 11.665 2 10.539V7.07c0-1.321.947-2.489 2.294-2.676A41.047 41.047 0 0 1 6 4.193V3.75Zm6.5 0v.325a41.622 41.622 0 0 0-5 0V3.75c0-.69.56-1.25 1.25-1.25h2.5c.69 0 1.25.56 1.25 1.25ZM10 10a1 1 0 0 0-1 1v.01a1 1 0 0 0 1 1h.01a1 1 0 0 0 1-1V11a1 1 0 0 0-1-1H10Z" clip-rule="evenodd" />
                   <path d="M3 15.055v-.684c.126.053.255.1.39.142 2.092.642 4.313.987 6.61.987 2.297 0 4.518-.345 6.61-.987.135-.041.264-.089.39-.142v.684c0 1.347-.985 2.53-2.363 2.686a41.454 41.454 0 0 1-9.274 0C3.985 17.585 3 16.402 3 15.055Z" />
@@ -127,7 +127,7 @@
               </a>
             </li>
             <li class="aspect-square h-24 hidden xs:flex sm:hidden md:flex justify-center items-center">
-              <button hx-get="/windows/buttons.html" hx-target="#page" hx-swap="outerHTML transition:true" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none" id="buttons">
+              <button name="Extras" hx-get="/windows/buttons.html" hx-target="#page" hx-swap="outerHTML transition:true" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none" id="buttons">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-9 h-9 fill-blue group-hover-focus:fill-gray transition-colors">
                   <path d="M5.127 3.502 5.25 3.5h9.5c.041 0 .082 0 .123.002A2.251 2.251 0 0 0 12.75 2h-5.5a2.25 2.25 0 0 0-2.123 1.502ZM1 10.25A2.25 2.25 0 0 1 3.25 8h13.5A2.25 2.25 0 0 1 19 10.25v5.5A2.25 2.25 0 0 1 16.75 18H3.25A2.25 2.25 0 0 1 1 15.75v-5.5ZM3.25 6.5c-.04 0-.082 0-.123.002A2.25 2.25 0 0 1 5.25 5h9.5c.98 0 1.814.627 2.123 1.502a3.819 3.819 0 0 0-.123-.002H3.25Z" />
                 </svg>
@@ -205,7 +205,7 @@
       });
 
       const copyBtn = () => {
-        navigator.clipboard.writeText(`<a href="https://www.thomasricci.dev"><img src="https://button.thomasricci.dev/button.png" alt="Thomas Ricci"></a>`);
+        navigator.clipboard.writeText(`<a aria-label="Thomas Ricci" href="https://www.thomasricci.dev"><img src="https://button.thomasricci.dev/button.png" alt="Thomas Ricci"></a>`);
         alert("Copied!");
       }
     </script>
