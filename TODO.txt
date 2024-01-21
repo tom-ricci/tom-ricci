@@ -1,9 +1,0 @@
-TODO:
- - Lighthouse & Pagespeed
- - Archive www.thomasricci.dev, thomasricci.dev, portfolio-4fi.pages.dev to wayback & archive.is
- - Update portfolio to a link pointing to www.thomasricci.dev
- - Archive www.thomasricci.dev, thomasricci.dev, portfolio-4fi.pages.dev to wayback & archive.is
- - Point domain to new pages site
- - Ensure everything works
- - Archive www.thomasricci.dev, thomasricci.dev, portfolio-4fi.pages.dev to wayback & archive.is
- - Submit transitions api issue wrt vh vs dvh
