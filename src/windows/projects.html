@@ -1,0 +1,225 @@
+<article class="border-blue border-4 border-b-0 lg:border-b-4 border-solid grow rounded-3xl pt-6 lg:pb-6 px-9 bg-blue text-gray h-full w-full flex flex-col relative" id="page" _="on load add @open to the closest <dialog/> finally send needscroll to the body then wait 300ms then call #projects's blur()">
+  <div class="flex flex-row justify-between">
+    <h2 class="header align-text-top cursor-default">projects</h2>
+    <button hx-get="/windows/empty.html" hx-target="closest <article/>" hx-swap="outerHTML transition:true" id="close">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-11 h-11">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM8.28 7.22a.75.75 0 0 0-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 1 0 1.06 1.06L10 11.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L11.06 10l1.72-1.72a.75.75 0 0 0-1.06-1.06L10 8.94 8.28 7.22Z" clip-rule="evenodd" />
+      </svg>
+    </button>
+  </div>
+  <section class="relative grow overflow-auto mt-3 blue-scroller">
+    <ul class="mt-8 projects" id="projectlist">
+      <li class="group cursor-pointer block">
+        <a href="https://deploy.nexus">
+          <div class="flex flex-row justify-between">
+            <h3 class="subheader pb-3">
+              Nexus
+            </h3>
+          </div>
+          <p class="body pb-3">
+            A platform that helps you build and maintain your own cloud using on-premises bare-metal or IaaS hardware.
+          </p>
+          <div class="flex flex-row items-center gap-2 group-hover-focus:bg-gray rounded-full transition-colors w-fit">
+            <div class="relative z-0 h-9 w-9">
+              <div class="absolute bg-blue top-2 left-2 w-5 h-5 z-0"></div>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="rgb(242,242,247)" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 w-9 h-full z-10">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM4.75 7.25C4.33579 7.25 4 7.58579 4 8C4 8.41421 4.33579 8.75 4.75 8.75H9.3401L7.23966 10.7004C6.93613 10.9823 6.91855 11.4568 7.20041 11.7603C7.48226 12.0639 7.95681 12.0814 8.26034 11.7996L11.7603 8.54959C11.9132 8.40769 12 8.20855 12 8C12 7.79145 11.9132 7.59231 11.7603 7.4504L8.26034 4.2004C7.95681 3.91855 7.48226 3.93613 7.2004 4.23966C6.91855 4.54319 6.93613 5.01774 7.23966 5.2996L9.3401 7.25H4.75Z" fill="rgb(242,242,247)"/>
+              </svg>
+            </div>
+            <div class="caption group-hover-focus:text-blue text-gray transition-all pr-6 -translate-y-[0.0625rem]">
+              Deploy your Nexus
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="group cursor-pointer block">
+        <a href="https://robotics.xbhs.com">
+          <div class="flex flex-row justify-between">
+            <h3 class="subheader pb-3">
+              FTC 19460
+            </h3>
+          </div>
+          <p class="body pb-3">
+            I was the Captain and Software Director of FTC 19460, a competitive robotics team based in Massachusetts, during the FTC Power Play season.
+          </p>
+          <div class="flex flex-row items-center gap-2 group-hover-focus:bg-gray rounded-full transition-colors w-fit">
+            <div class="relative z-0 h-9 w-9">
+              <div class="absolute bg-blue top-2 left-2 w-5 h-5 z-0"></div>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="rgb(242,242,247)" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 w-9 h-full z-10">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM4.75 7.25C4.33579 7.25 4 7.58579 4 8C4 8.41421 4.33579 8.75 4.75 8.75H9.3401L7.23966 10.7004C6.93613 10.9823 6.91855 11.4568 7.20041 11.7603C7.48226 12.0639 7.95681 12.0814 8.26034 11.7996L11.7603 8.54959C11.9132 8.40769 12 8.20855 12 8C12 7.79145 11.9132 7.59231 11.7603 7.4504L8.26034 4.2004C7.95681 3.91855 7.48226 3.93613 7.2004 4.23966C6.91855 4.54319 6.93613 5.01774 7.23966 5.2996L9.3401 7.25H4.75Z" fill="rgb(242,242,247)"/>
+              </svg>
+            </div>
+            <div class="caption group-hover-focus:text-blue text-gray transition-all pr-6 -translate-y-[0.0625rem]">
+              Learn more
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="group cursor-pointer block">
+        <a href="https://github.com/tom-ricci/easy-devbox">
+          <div class="flex flex-row justify-between">
+            <h3 class="subheader pb-3">
+              easy-devbox
+            </h3>
+          </div>
+          <p class="body pb-3">
+            An installer for direnv-integrated devbox, a tool that helps you reproduce development environments across multiple systems.
+          </p>
+          <div class="flex flex-row items-center gap-2 group-hover-focus:bg-gray rounded-full transition-colors w-fit">
+            <div class="relative z-0 h-9 w-9">
+              <div class="absolute bg-blue top-2 left-2 w-5 h-5 z-0"></div>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="rgb(242,242,247)" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 w-9 h-full z-10">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM4.75 7.25C4.33579 7.25 4 7.58579 4 8C4 8.41421 4.33579 8.75 4.75 8.75H9.3401L7.23966 10.7004C6.93613 10.9823 6.91855 11.4568 7.20041 11.7603C7.48226 12.0639 7.95681 12.0814 8.26034 11.7996L11.7603 8.54959C11.9132 8.40769 12 8.20855 12 8C12 7.79145 11.9132 7.59231 11.7603 7.4504L8.26034 4.2004C7.95681 3.91855 7.48226 3.93613 7.2004 4.23966C6.91855 4.54319 6.93613 5.01774 7.23966 5.2996L9.3401 7.25H4.75Z" fill="rgb(242,242,247)"/>
+              </svg>
+            </div>
+            <div class="caption group-hover-focus:text-blue text-gray transition-all pr-6 -translate-y-[0.0625rem]">
+              Simplify your environment
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="group cursor-pointer block">
+        <a href="https://octobox.thomasricci.dev">
+          <div class="flex flex-row justify-between">
+            <h3 class="subheader pb-3">
+              Octobox
+            </h3>
+          </div>
+          <p class="body pb-3">
+            A simple but powerful React meta-framework built in TypeScript. Currently looking for maintainers.
+          </p>
+          <div class="flex flex-row items-center gap-2 group-hover-focus:bg-gray rounded-full transition-colors w-fit">
+            <div class="relative z-0 h-9 w-9">
+              <div class="absolute bg-blue top-2 left-2 w-5 h-5 z-0"></div>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="rgb(242,242,247)" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 w-9 h-full z-10">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM4.75 7.25C4.33579 7.25 4 7.58579 4 8C4 8.41421 4.33579 8.75 4.75 8.75H9.3401L7.23966 10.7004C6.93613 10.9823 6.91855 11.4568 7.20041 11.7603C7.48226 12.0639 7.95681 12.0814 8.26034 11.7996L11.7603 8.54959C11.9132 8.40769 12 8.20855 12 8C12 7.79145 11.9132 7.59231 11.7603 7.4504L8.26034 4.2004C7.95681 3.91855 7.48226 3.93613 7.2004 4.23966C6.91855 4.54319 6.93613 5.01774 7.23966 5.2996L9.3401 7.25H4.75Z" fill="rgb(242,242,247)"/>
+              </svg>
+            </div>
+            <div class="caption group-hover-focus:text-blue text-gray transition-all pr-6 -translate-y-[0.0625rem]">
+              Browse the code
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="group cursor-pointer block">
+        <a href="https://github.com/tom-ricci/contributor">
+          <div class="flex flex-row justify-between">
+            <h3 class="subheader pb-3">
+              Contributor
+            </h3>
+          </div>
+          <p class="body pb-3">
+            A utility that helps you add your ineligible commits to your contribution table.
+          </p>
+          <div class="flex flex-row items-center gap-2 group-hover-focus:bg-gray rounded-full transition-colors w-fit">
+            <div class="relative z-0 h-9 w-9">
+              <div class="absolute bg-blue top-2 left-2 w-5 h-5 z-0"></div>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="rgb(242,242,247)" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 w-9 h-full z-10">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM4.75 7.25C4.33579 7.25 4 7.58579 4 8C4 8.41421 4.33579 8.75 4.75 8.75H9.3401L7.23966 10.7004C6.93613 10.9823 6.91855 11.4568 7.20041 11.7603C7.48226 12.0639 7.95681 12.0814 8.26034 11.7996L11.7603 8.54959C11.9132 8.40769 12 8.20855 12 8C12 7.79145 11.9132 7.59231 11.7603 7.4504L8.26034 4.2004C7.95681 3.91855 7.48226 3.93613 7.2004 4.23966C6.91855 4.54319 6.93613 5.01774 7.23966 5.2996L9.3401 7.25H4.75Z" fill="rgb(242,242,247)"/>
+              </svg>
+            </div>
+            <div class="caption group-hover-focus:text-blue text-gray transition-all pr-6 -translate-y-[0.0625rem]">
+              Add your commits
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="group cursor-pointer block">
+        <a href="https://www.npmjs.com/package/create-htmx-app">
+          <div class="flex flex-row justify-between">
+            <h3 class="subheader pb-3">
+              create-htmx-app
+            </h3>
+          </div>
+          <p class="body pb-3">
+            A bootstrapper for HTMX projects that runs on npx.
+          </p>
+          <div class="flex flex-row items-center gap-2 group-hover-focus:bg-gray rounded-full transition-colors w-fit">
+            <div class="relative z-0 h-9 w-9">
+              <div class="absolute bg-blue top-2 left-2 w-5 h-5 z-0"></div>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="rgb(242,242,247)" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 w-9 h-full z-10">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM4.75 7.25C4.33579 7.25 4 7.58579 4 8C4 8.41421 4.33579 8.75 4.75 8.75H9.3401L7.23966 10.7004C6.93613 10.9823 6.91855 11.4568 7.20041 11.7603C7.48226 12.0639 7.95681 12.0814 8.26034 11.7996L11.7603 8.54959C11.9132 8.40769 12 8.20855 12 8C12 7.79145 11.9132 7.59231 11.7603 7.4504L8.26034 4.2004C7.95681 3.91855 7.48226 3.93613 7.2004 4.23966C6.91855 4.54319 6.93613 5.01774 7.23966 5.2996L9.3401 7.25H4.75Z" fill="rgb(242,242,247)"/>
+              </svg>
+            </div>
+            <div class="caption group-hover-focus:text-blue text-gray transition-all pr-6 -translate-y-[0.0625rem]">
+              Create a project
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="group cursor-pointer block">
+        <a href="https://schlatt.me">
+          <div class="flex flex-row justify-between">
+            <h3 class="subheader pb-3">
+              schlatt.me
+            </h3>
+          </div>
+          <p class="body pb-3">
+            A Jschlatt voice cloner based on retrieval-based voice conversion.
+          </p>
+          <div class="flex flex-row items-center gap-2 group-hover-focus:bg-gray rounded-full transition-colors w-fit">
+            <div class="relative z-0 h-9 w-9">
+              <div class="absolute bg-blue top-2 left-2 w-5 h-5 z-0"></div>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="rgb(242,242,247)" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 w-9 h-full z-10">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM4.75 7.25C4.33579 7.25 4 7.58579 4 8C4 8.41421 4.33579 8.75 4.75 8.75H9.3401L7.23966 10.7004C6.93613 10.9823 6.91855 11.4568 7.20041 11.7603C7.48226 12.0639 7.95681 12.0814 8.26034 11.7996L11.7603 8.54959C11.9132 8.40769 12 8.20855 12 8C12 7.79145 11.9132 7.59231 11.7603 7.4504L8.26034 4.2004C7.95681 3.91855 7.48226 3.93613 7.2004 4.23966C6.91855 4.54319 6.93613 5.01774 7.23966 5.2996L9.3401 7.25H4.75Z" fill="rgb(242,242,247)"/>
+              </svg>
+            </div>
+            <div class="caption group-hover-focus:text-blue text-gray transition-all pr-6 -translate-y-[0.0625rem]">
+              Schlatt yourself
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="group cursor-pointer block">
+        <a href="https://www.npmjs.com/package/extrastrap">
+          <div class="flex flex-row justify-between">
+            <h3 class="subheader pb-3">
+              Extrastrap
+            </h3>
+          </div>
+          <p class="body pb-3">
+            A small library of Bootstrap-like cursor and z-index classes.
+          </p>
+          <div class="flex flex-row items-center gap-2 group-hover-focus:bg-gray rounded-full transition-colors w-fit">
+            <div class="relative z-0 h-9 w-9">
+              <div class="absolute bg-blue top-2 left-2 w-5 h-5 z-0"></div>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="rgb(242,242,247)" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 w-9 h-full z-10">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM4.75 7.25C4.33579 7.25 4 7.58579 4 8C4 8.41421 4.33579 8.75 4.75 8.75H9.3401L7.23966 10.7004C6.93613 10.9823 6.91855 11.4568 7.20041 11.7603C7.48226 12.0639 7.95681 12.0814 8.26034 11.7996L11.7603 8.54959C11.9132 8.40769 12 8.20855 12 8C12 7.79145 11.9132 7.59231 11.7603 7.4504L8.26034 4.2004C7.95681 3.91855 7.48226 3.93613 7.2004 4.23966C6.91855 4.54319 6.93613 5.01774 7.23966 5.2996L9.3401 7.25H4.75Z" fill="rgb(242,242,247)"/>
+              </svg>
+            </div>
+            <div class="caption group-hover-focus:text-blue text-gray transition-all pr-6 -translate-y-[0.0625rem]">
+              Install the library
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="group cursor-pointer block">
+        <a href="https://www.npmjs.com/package/@tom-ricci/react-spacer">
+          <div class="flex flex-row justify-between">
+            <h3 class="subheader pb-3">
+              spacer<sup>v4</sup>
+            </h3>
+          </div>
+          <p class="body pb-3">
+            A super-simple spacer component for React.
+          </p>
+          <div class="flex flex-row items-center gap-2 group-hover-focus:bg-gray rounded-full transition-colors w-fit">
+            <div class="relative z-0 h-9 w-9">
+              <div class="absolute bg-blue top-2 left-2 w-5 h-5 z-0"></div>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="rgb(242,242,247)" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 w-9 h-full z-10">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM4.75 7.25C4.33579 7.25 4 7.58579 4 8C4 8.41421 4.33579 8.75 4.75 8.75H9.3401L7.23966 10.7004C6.93613 10.9823 6.91855 11.4568 7.20041 11.7603C7.48226 12.0639 7.95681 12.0814 8.26034 11.7996L11.7603 8.54959C11.9132 8.40769 12 8.20855 12 8C12 7.79145 11.9132 7.59231 11.7603 7.4504L8.26034 4.2004C7.95681 3.91855 7.48226 3.93613 7.2004 4.23966C6.91855 4.54319 6.93613 5.01774 7.23966 5.2996L9.3401 7.25H4.75Z" fill="rgb(242,242,247)"/>
+              </svg>
+            </div>
+            <div class="caption group-hover-focus:text-blue text-gray transition-all pr-6 -translate-y-[0.0625rem]">
+              Use the component
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <div class="h-8"></div>
+  </section>
+  <div class="absolute top-[6.75rem] left-0 w-[calc(100%-3.25rem+0.125rem)] h-7" style="background-image: linear-gradient(to top, rgba(0,122,255,0), rgba(0,122,255,1));"></div>
+  <div class="hidden lg:block absolute bottom-7 left-0 w-[calc(100%-3.25rem+0.125rem)] h-7" style="background-image: linear-gradient(to bottom, rgba(0,122,255,0), rgba(0,122,255,1));"></div>
+  <div class="hidden lg:block absolute bottom-5 left-0 w-[calc(100%-3.25rem+0.125rem)] h-2 bg-blue"></div>
+</article>

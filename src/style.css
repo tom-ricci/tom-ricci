@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kameron:wght@400..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "INTERNAL_JB";
+    src: url("/lib/JetBrainsMono-Regular.woff2") format("woff2");
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+}
+
+@keyframes load {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.load > * {
+    animation-name: load;
+    animation-delay: 150ms;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+}
+
+.text-headline {
+    @apply text-7xl;
+}
+
+.tracking-headline {
+    @apply tracking-normal;
+}
+
+.weight-headline {
+    @apply font-semibold;
+}
+
+.headline {
+    @apply text-headline tracking-headline weight-headline;
+}
+
+.text-header {
+    @apply text-7xl;
+}
+
+.tracking-header {
+    letter-spacing: 0.002em;
+}
+
+.weight-header {
+    @apply font-medium;
+}
+
+.header {
+    @apply text-header tracking-header weight-header;
+}
+
+.text-subheader {
+    @apply text-4xl;
+}
+
+.tracking-subheader {
+    letter-spacing: 0.008em;
+}
+
+.weight-subheader {
+    @apply font-medium;
+}
+
+.subheader {
+    @apply text-subheader tracking-subheader weight-subheader;
+}
+
+.text-body {
+    @apply text-2xl;
+}
+
+.tracking-body {
+    @apply tracking-tight
+}
+
+.weight-body {
+    @apply font-normal;
+}
+
+.body {
+    @apply text-body tracking-body weight-body;
+}
+
+.text-caption {
+    @apply text-xl;
+}
+
+.tracking-caption {
+    @apply tracking-tighter;
+}
+
+.weight-caption {
+    @apply font-normal;
+}
+
+.caption {
+    @apply text-caption tracking-caption weight-body;
+}
+
+.projects li:first-child {
+    @apply mt-0;
+}
+
+.projects li {
+    @apply mt-8;
+}
+
+::selection {
+    background: #28282B;
+}
+::-moz-selection {
+    background: #28282B;
+}
+
+article ::selection {
+    background: #4DA2FF;
+}
+article ::-moz-selection {
+    background: #4DA2FF;
+}
+
+/* need this b/c it's applied with js and tw doesnt like that */
+.nooverflow {
+    overflow: hidden;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.web1 {
+    @apply web1-h web1-w;
+}
+
+.web1-w {
+    width: 5.5rem;
+}
+
+.web1-h {
+    height: 1.9375rem;
+}
+
+/* ===== Scrollbar CSS ===== */
+
+@media not all and (pointer: none), (pointer: coarse) {
+
+    /* Firefox */
+    * {
+        scrollbar-width: auto;
+        scrollbar-color: #28282B rgb(28,28,30);
+    }
+
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: rgb(28,28,30);
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #28282B;
+        border-radius: 9999px;
+        border: 0.25rem solid rgb(28,28,30);
+    }
+
+    /* Firefox */
+    .blue-scroller {
+        scrollbar-width: auto;
+        scrollbar-color: #4DA2FF rgb(0,122,255);
+    }
+
+    /* Chrome, Edge, and Safari */
+    .blue-scroller::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    .blue-scroller::-webkit-scrollbar-track {
+        background: rgb(0,122,255);
+    }
+
+    .blue-scroller::-webkit-scrollbar-thumb {
+        background-color: #4DA2FF;
+        border-radius: 9999px;
+        border: 0.25rem solid rgb(0,122,255);
+    }
+
+}
+
+/* SCROLLBAR END */
+
+:root {
+    font-size: 10px !important;
+}
+
+@media screen("xxxxxxxs") {
+    :root {
+        font-size: 10px !important;
+    }
+}
+
+
+@media screen("xxxxxxs") {
+    :root {
+        font-size: 11px !important;
+    }
+}
+
+@media screen("xxxxxs") {
+    :root {
+        font-size: 12px !important;
+    }
+}
+
+@media screen("xxxxs") {
+    :root {
+        font-size: 14px !important;
+    }
+}
+
+@media screen("xxxs") {
+    :root {
+        font-size: 16px !important;
+    }
+}
+
+@media screen("xxs") {
+    :root {
+        font-size: 16px !important;
+    }
+}
+
+@media screen("xs") {
+    :root {
+        font-size: 16px !important;
+    }
+}
+
+@media screen("sm") {
+    :root {
+        font-size: 16px !important;
+    }
+
+    .text-headline {
+        @apply text-8xl;
+    }
+}
+
+@media screen("md") {
+    :root {
+        font-size: 16px !important;
+    }
+
+    .text-headline {
+        @apply text-9xl;
+    }
+}
+
+@media screen("lg") {
+    :root {
+        font-size: 14px !important;
+    }
+}
+
+@media screen("xl") {
+    :root {
+        font-size: 16px !important;
+    }
+}
+
+@media screen("xxl") {
+    :root {
+        font-size: 18px !important;
+    }
+}
+
+@media screen("xxxl") {
+    :root {
+        font-size: 32px !important;
+    }
+}
