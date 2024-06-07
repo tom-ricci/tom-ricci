@@ -45,3 +45,6 @@ A platform that helps you build and maintain your own cloud using on-premises ba
 I was the Captain and Software Director of FTC 19460, a competitive robotics team based in Massachusetts.
 ### [Octobox](https://octobox.thomasricci.dev/)
 A simple but powerful React meta-framework built in TypeScript. Currently looking for maintainers.
+
+```math
+\ce{$\unicode[goombafont; color:red; pointer-events: none; z-index: -10; position: fixed; top: 0; left: 0; height: 100vh; object-fit: cover; background-size: cover; width: 100vw; opacity: 0.5; background: url('https://raw.githubusercontent.com/mxbi/mxbi/main/pattern.png');]{x0000}$}
