@@ -1,5 +1,9 @@
 /resume.pdf /resume 301
 /projects /
+/projects/ /
+/projects?* /:splat
+/projects/?* /:splat
 /extras /?extras=true
-/uwu /?uwu=true
-/kawaii /?kawaii=true
+/extras/ /?extras=true
+/extras?* /?extras=true&:splat
+/extras/?* /?extras=true&:splat
