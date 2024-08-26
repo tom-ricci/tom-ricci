@@ -3,3 +3,4 @@
 
 /resume.pdf
   HX-Refresh: true
+  HX-Redirect: /resume.pdf
