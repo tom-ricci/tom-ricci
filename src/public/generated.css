@@ -839,6 +839,11 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pb-3{
   padding-bottom: 0.75rem;
 }
@@ -1337,6 +1342,11 @@ article ::-moz-selection {
     padding-left: 8rem;
     padding-right: 8rem;
   }
+
+  .xxs\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
 
 @media (min-width: 814px){
@@ -1398,6 +1408,11 @@ article ::-moz-selection {
     padding-right: 0px;
   }
 
+  .md\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .md\:pt-16{
     padding-top: 4rem;
   }
@@ -1417,6 +1432,10 @@ article ::-moz-selection {
     display: flex;
   }
 
+  .lg\:hidden{
+    display: none;
+  }
+
   .lg\:w-32{
     width: 8rem;
   }
@@ -1431,6 +1450,11 @@ article ::-moz-selection {
 
   .lg\:border-b-4{
     border-bottom-width: 4px;
+  }
+
+  .lg\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .lg\:pb-6{

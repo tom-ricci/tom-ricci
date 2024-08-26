@@ -41,7 +41,7 @@
   <link href="/public/generated.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
 </head>
-<body hx-boost="true" class="min-h-[100dvh] h-full bg-bg flex flex-row px-10 xxs:px-32 py-10 justify-center items-center load">
+<body hx-boost="true" class="min-h-[100dvh] h-full bg-bg flex flex-row px-10 xxs:px-32 py-10 xxs:py-20 lg:py-10 justify-center items-center load">
 <div class="flex flex-row items-center min-h-fit lg:w-full max-w-[1776px] xxl:max-w-[1948px] xxxl:max-w-[3696px]">
   <div class="lg:mx-0 w-full md:px-0 md:!w-[60.05rem] h-fit shrink-0 cursor-default" id="home">
     <header>
@@ -98,6 +98,9 @@
         </li>
       </ul>
     </nav>
+    <div id="mobilePageContainer" class="lg:hidden pt-12 sm:pt-14 md:pt-16">
+      <article id="mobilePage" class="border-blue border-[0.25rem] border-dashed rounded-3xl h-full w-full" data-display="desktop" hx-get="/windows/projects.html" hx-target="this" hx-trigger="desiredprojects" _="on load send readytopage" hx-swap="outerHTML transition:true"></article>
+    </div>
     <footer class="pt-12 sm:pt-14 md:pt-16">
       <p class="caption text-dark">Copyright © 2024 Thomas Ricci. Open-source under the MIT License.</p>
     </footer>
@@ -132,6 +135,7 @@
       document.getElementById("buttons").dispatchEvent(new Event("desiredextras"));
     } else {
       document.getElementById("page").dispatchEvent(new Event("desiredprojects"));
+      document.getElementById("mobilePage").dispatchEvent(new Event("desiredprojects"));
     }
   })
 </script>
