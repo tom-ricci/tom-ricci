@@ -6,3 +6,4 @@
 
 /resume
   Content-Type: application/pdf
+  X-Content-Type-Options: nosniff
