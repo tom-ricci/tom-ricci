@@ -3,3 +3,6 @@
 
 /resume.pdf
   HX-Redirect: /resume.pdf
+
+/resume
+  Content-Type: application/pdf
