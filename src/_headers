@@ -4,12 +4,6 @@
 /resume.pdf
   HX-Redirect: /resume.pdf
 
-/resume
-  Content-Type: application/pdf
-  X-Content-Type-Options: nosniff
-  cache-control: no-transform
-
-
 /resume/
   Content-Type: application/pdf
   X-Content-Type-Options: nosniff
