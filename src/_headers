@@ -7,3 +7,14 @@
 /resume
   Content-Type: application/pdf
   X-Content-Type-Options: nosniff
+  cache-control: no-transform
+
+/resume/
+  Content-Type: application/pdf
+  X-Content-Type-Options: nosniff
+  cache-control: no-transform
+
+/resume/index.html
+  Content-Type: application/pdf
+  X-Content-Type-Options: nosniff
+  cache-control: no-transform
