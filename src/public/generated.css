@@ -686,6 +686,10 @@ video {
   width: 2.25rem;
 }
 
+.w-96{
+  width: 24rem;
+}
+
 .w-\[calc\(100\%-3\.25rem\+0\.125rem\)\]{
   width: calc(100% - 3.25rem + 0.125rem);
 }
@@ -781,12 +785,20 @@ video {
   border-radius: 9999px;
 }
 
+.border-2{
+  border-width: 2px;
+}
+
 .border-4{
   border-width: 4px;
 }
 
 .border-\[0\.25rem\]{
   border-width: 0.25rem;
+}
+
+.border-\[3px\]{
+  border-width: 3px;
 }
 
 .border-b-0{
@@ -1132,6 +1144,10 @@ article ::-moz-selection {
   height: 1.9375rem;
 }
 
+.yfix {
+  transform: translate(0px,-1.3px);
+}
+
 /* ===== Scrollbar CSS ===== */
 
 @media not all and (pointer: none), (pointer: coarse) {
@@ -1209,6 +1225,10 @@ article ::-moz-selection {
 @media (min-width: 416px) {
   :root {
     font-size: 14px !important;
+  }
+
+  .yfix {
+    transform: translate(0px, -2.66px);
   }
 }
 
@@ -1324,6 +1344,17 @@ article ::-moz-selection {
   color: rgb(242 242 247 / var(--tw-text-opacity));
 }
 
+@media (min-width: 320px){
+  .xxxxxxxs\:block{
+    display: block;
+  }
+
+  .xxxxxxxs\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
 @media (min-width: 650px){
   .xxs\:mt-\[4\.25rem\]{
     margin-top: 4.25rem;
@@ -1333,47 +1364,68 @@ article ::-moz-selection {
     display: block;
   }
 
-  .xxs\:px-32{
-    padding-left: 8rem;
-    padding-right: 8rem;
+  .xxs\:h-24{
+    height: 6rem;
   }
 
-  .xxs\:py-20{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+  .xxs\:border-4{
+    border-width: 4px;
+  }
+
+  .xxs\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .xxs\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
 @media (min-width: 814px){
-  .xs\:flex{
-    display: flex;
-  }
-
   .xs\:hidden{
     display: none;
+  }
+
+  .xs\:justify-normal{
+    justify-content: normal;
   }
 
   .xs\:justify-between{
     justify-content: space-between;
   }
+
+  .xs\:gap-8{
+    gap: 2rem;
+  }
+
+  .xs\:border-4{
+    border-width: 4px;
+  }
+
+  .xs\:px-32{
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .xs\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .xs\:pt-8{
+    padding-top: 2rem;
+  }
 }
 
 @media (min-width: 1014px){
-  .sm\:block{
-    display: block;
+  .sm\:gap-11{
+    gap: 2.75rem;
   }
 
-  .sm\:hidden{
-    display: none;
-  }
-
-  .sm\:w-96{
-    width: 24rem;
-  }
-
-  .sm\:px-10{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+  .sm\:pt-11{
+    padding-top: 2.75rem;
   }
 
   .sm\:pt-12{

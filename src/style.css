@@ -157,6 +157,10 @@ article ::-moz-selection {
     height: 1.9375rem;
 }
 
+.yfix {
+    transform: translate(0px,-1.3px);
+}
+
 /* ===== Scrollbar CSS ===== */
 
 @media not all and (pointer: none), (pointer: coarse) {
@@ -233,6 +237,10 @@ article ::-moz-selection {
 @media screen("xxxxs") {
     :root {
         font-size: 14px !important;
+    }
+
+    .yfix {
+        transform: translate(0px, -2.66px);
     }
 }
 

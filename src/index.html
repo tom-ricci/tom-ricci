@@ -41,7 +41,7 @@
   <link href="/public/generated.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
 </head>
-<body hx-boost="true" class="min-h-[100dvh] h-full bg-bg flex flex-row px-10 xxs:px-32 py-10 xxs:py-20 lg:py-10 justify-center items-center load">
+<body hx-boost="true" class="min-h-[100dvh] h-full bg-bg flex flex-row px-10 xxs:px-16 xs:px-32 py-10 xxs:py-12 xs:py-20 lg:py-10 justify-center items-center load">
 <div class="flex flex-row items-center min-h-fit lg:w-full max-w-[1776px] xxl:max-w-[1948px] xxxl:max-w-[3696px]">
   <div class="lg:mx-0 w-full md:px-0 md:!w-[60.05rem] h-fit shrink-0 cursor-default" id="home">
     <header>
@@ -54,16 +54,16 @@
     </main>
     <nav class="pt-12 sm:pt-14 md:pt-16">
       <ul class="flex flex-row items-center justify-evenly xs:justify-between">
-        <li class="aspect-square sm:w-96 h-24 flex justify-center items-center">
-          <a aria-label="View Resume" href="/resume" class="w-full h-full border-blue border-4 rounded-full sm:px-10 flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none" id="projects">
-            <span class="block text-blue group-hover-focus:text-gray transition-colors subheader !font-semibold">View Resume</span>
-            <span class="hidden sm:block grow"></span>
+        <li class="w-96 h-20 xxs:h-24 flex justify-center items-center">
+          <a aria-label="View Resume" href="/resume" class="w-full h-full border-blue border-[3px] xxs:border-4 rounded-full xxxxxxxs:px-10 flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none" id="projects">
+            <span class="block text-blue group-hover-focus:text-gray transition-colors subheader !font-semibold yfix">View Resume</span>
+            <span class="hidden xxxxxxxs:block grow"></span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="block w-9 h-9 fill-blue group-hover-focus:fill-gray transition-colors">
               <path fill-rule="evenodd" d="M15.28 9.47a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 1 1-1.06-1.06L13.69 10 9.97 6.28a.75.75 0 0 1 1.06-1.06l4.25 4.25ZM6.03 5.22l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L8.69 10 4.97 6.28a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd"></path>
             </svg>
           </a>
         </li>
-        <li class="aspect-square h-24 flex justify-center items-center">
+        <li class="aspect-square h-24 hidden md:flex justify-center items-center">
           <a aria-label="Email me" href="mailto:me@thomasricci.dev" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-9 h-9 fill-blue group-hover-focus:fill-gray transition-colors">
               <path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
@@ -71,21 +71,21 @@
             </svg>
           </a>
         </li>
-        <li class="aspect-square h-24 hidden xs:flex justify-center items-center">
+        <li class="aspect-square h-24 hidden md:flex justify-center items-center">
           <a aria-label="My GitHub" href="https://github.thomasricci.dev" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none">
             <svg width="98" height="96" viewBox="0 0 98 96" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 fill-blue group-hover-focus:fill-gray transition-colors">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217C0 70.973 13.993 89.389 33.405 95.907C35.832 96.397 36.721 94.848 36.721 93.545C36.721 92.404 36.641 88.493 36.641 84.418C23.051 87.352 20.221 78.551 20.221 78.551C18.037 72.847 14.801 71.381 14.801 71.381C10.353 68.366 15.125 68.366 15.125 68.366C20.059 68.692 22.648 73.418 22.648 73.418C27.015 80.914 34.052 78.796 36.883 77.492C37.287 74.314 38.582 72.114 39.957 70.892C29.118 69.751 17.714 65.514 17.714 46.609C17.714 41.231 19.654 36.831 22.728 33.409C22.243 32.187 20.544 27.134 23.214 20.371C23.214 20.371 27.339 19.067 36.64 25.423C40.6221 24.3457 44.7288 23.7976 48.854 23.793C52.979 23.793 57.184 24.364 61.067 25.423C70.369 19.067 74.494 20.371 74.494 20.371C77.164 27.134 75.464 32.187 74.979 33.409C78.134 36.831 79.994 41.231 79.994 46.609C79.994 65.514 68.59 69.669 57.67 70.892C59.45 72.44 60.986 75.373 60.986 80.018C60.986 86.618 60.906 91.915 60.906 93.544C60.906 94.848 61.796 96.397 64.222 95.908C83.634 89.388 97.627 70.973 97.627 49.217C97.707 22 75.788 0 48.854 0Z"/>
             </svg>
           </a>
         </li>
-        <li class="aspect-square h-24 flex justify-center items-center">
+        <li class="aspect-square h-24 hidden md:flex justify-center items-center">
           <a aria-label="My LinkedIn" href="https://linkedin.thomasricci.dev" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none">
             <svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 fill-blue group-hover-focus:fill-gray transition-colors">
               <path d="M163.643 163.637H134.779V113.553C134.779 98.7771 128.497 94.2197 120.394 94.2197C111.83 94.2197 103.432 100.665 103.432 113.921V163.637H74.5671V71.9396H102.326V84.6443H102.695C105.488 78.9989 115.238 69.3615 130.131 69.3615C146.237 69.3615 163.643 78.9156 163.643 106.924V163.637ZM42.7947 59.1631C33.6029 59.1631 26.1525 52.168 26.1525 42.5947C26.1525 33.0213 33.6029 26.0187 42.7947 26.0187C51.9853 26.0187 59.4363 33.0213 59.4363 42.5947C59.4363 52.168 51.9853 59.1631 42.7947 59.1631ZM57.2269 163.568H28.3624V71.8688H57.2269V163.568ZM177.832 -1.00136e-05H14.1733C6.34518 -1.00136e-05 0.00039053 6.34533 0.00039053 14.1733V177.827C0.00039053 185.655 6.34518 192 14.1733 192H177.832C185.66 192 192.005 185.655 192.005 177.827V14.1733C192.005 6.34533 185.66 -1.00136e-05 177.832 -1.00136e-05Z"/>
             </svg>
           </a>
         </li>
-        <li class="aspect-square h-24 hidden xs:flex sm:hidden md:flex justify-center items-center">
+        <li class="aspect-square h-24 hidden md:flex justify-center items-center">
           <button aria-label="Extras" hx-get="/windows/buttons.html" hx-swap="none" hx-trigger="click, desiredextras" hx-on="htmx:afterRequest: massSwap(event)" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none" data-container="buttons" id="desktopExtrasButton">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-9 h-9 fill-blue group-hover-focus:fill-gray transition-colors">
               <path d="M5.127 3.502 5.25 3.5h9.5c.041 0 .082 0 .123.002A2.251 2.251 0 0 0 12.75 2h-5.5a2.25 2.25 0 0 0-2.123 1.502ZM1 10.25A2.25 2.25 0 0 1 3.25 8h13.5A2.25 2.25 0 0 1 19 10.25v5.5A2.25 2.25 0 0 1 16.75 18H3.25A2.25 2.25 0 0 1 1 15.75v-5.5ZM3.25 6.5c-.04 0-.082 0-.123.002A2.25 2.25 0 0 1 5.25 5h9.5c.98 0 1.814.627 2.123 1.502a3.819 3.819 0 0 0-.123-.002H3.25Z" />
@@ -93,31 +93,31 @@
           </button>
         </li>
       </ul>
-      <ul class="flex flex-row items-center justify-evenly xs:justify-between md:hidden">
-        <li class="aspect-square h-24 flex justify-center items-center">
-          <a aria-label="Email me" href="mailto:me@thomasricci.dev" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none">
+      <ul class="flex flex-row items-center justify-evenly xs:justify-normal xs:gap-8 sm:gap-11 md:hidden pt-6 xs:pt-8 sm:pt-11">
+        <li class="aspect-square h-20 xxs:h-24 flex justify-center items-center">
+          <a aria-label="Email me" href="mailto:me@thomasricci.dev" class="w-full h-full border-blue border-[3px] xxs:border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-9 h-9 fill-blue group-hover-focus:fill-gray transition-colors">
               <path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
               <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
             </svg>
           </a>
         </li>
-        <li class="aspect-square h-24 hidden xs:flex justify-center items-center">
-          <a aria-label="My GitHub" href="https://github.thomasricci.dev" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none">
+        <li class="aspect-square h-20 xxs:h-24 flex justify-center items-center">
+          <a aria-label="My GitHub" href="https://github.thomasricci.dev" class="w-full h-full border-blue border-[3px] xxs:border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none">
             <svg width="98" height="96" viewBox="0 0 98 96" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 fill-blue group-hover-focus:fill-gray transition-colors">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217C0 70.973 13.993 89.389 33.405 95.907C35.832 96.397 36.721 94.848 36.721 93.545C36.721 92.404 36.641 88.493 36.641 84.418C23.051 87.352 20.221 78.551 20.221 78.551C18.037 72.847 14.801 71.381 14.801 71.381C10.353 68.366 15.125 68.366 15.125 68.366C20.059 68.692 22.648 73.418 22.648 73.418C27.015 80.914 34.052 78.796 36.883 77.492C37.287 74.314 38.582 72.114 39.957 70.892C29.118 69.751 17.714 65.514 17.714 46.609C17.714 41.231 19.654 36.831 22.728 33.409C22.243 32.187 20.544 27.134 23.214 20.371C23.214 20.371 27.339 19.067 36.64 25.423C40.6221 24.3457 44.7288 23.7976 48.854 23.793C52.979 23.793 57.184 24.364 61.067 25.423C70.369 19.067 74.494 20.371 74.494 20.371C77.164 27.134 75.464 32.187 74.979 33.409C78.134 36.831 79.994 41.231 79.994 46.609C79.994 65.514 68.59 69.669 57.67 70.892C59.45 72.44 60.986 75.373 60.986 80.018C60.986 86.618 60.906 91.915 60.906 93.544C60.906 94.848 61.796 96.397 64.222 95.908C83.634 89.388 97.627 70.973 97.627 49.217C97.707 22 75.788 0 48.854 0Z"/>
             </svg>
           </a>
         </li>
-        <li class="aspect-square h-24 flex justify-center items-center">
-          <a aria-label="My LinkedIn" href="https://linkedin.thomasricci.dev" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none">
+        <li class="aspect-square h-20 xxs:h-24 flex justify-center items-center">
+          <a aria-label="My LinkedIn" href="https://linkedin.thomasricci.dev" class="w-full h-full border-blue border-[3px] xxs:border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none">
             <svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 fill-blue group-hover-focus:fill-gray transition-colors">
               <path d="M163.643 163.637H134.779V113.553C134.779 98.7771 128.497 94.2197 120.394 94.2197C111.83 94.2197 103.432 100.665 103.432 113.921V163.637H74.5671V71.9396H102.326V84.6443H102.695C105.488 78.9989 115.238 69.3615 130.131 69.3615C146.237 69.3615 163.643 78.9156 163.643 106.924V163.637ZM42.7947 59.1631C33.6029 59.1631 26.1525 52.168 26.1525 42.5947C26.1525 33.0213 33.6029 26.0187 42.7947 26.0187C51.9853 26.0187 59.4363 33.0213 59.4363 42.5947C59.4363 52.168 51.9853 59.1631 42.7947 59.1631ZM57.2269 163.568H28.3624V71.8688H57.2269V163.568ZM177.832 -1.00136e-05H14.1733C6.34518 -1.00136e-05 0.00039053 6.34533 0.00039053 14.1733V177.827C0.00039053 185.655 6.34518 192 14.1733 192H177.832C185.66 192 192.005 185.655 192.005 177.827V14.1733C192.005 6.34533 185.66 -1.00136e-05 177.832 -1.00136e-05Z"/>
             </svg>
           </a>
         </li>
-        <li class="aspect-square h-24 hidden xs:flex sm:hidden md:flex justify-center items-center">
-          <button aria-label="Extras" hx-get="/windows/buttons.html" hx-swap="none" hx-trigger="click, desiredextras" hx-on="htmx:afterRequest: massSwap(event)" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none" data-container="buttons" id="mobileExtrasButton">
+        <li class="aspect-square h-20 xxs:h-24 flex justify-center items-center">
+          <button aria-label="Extras" hx-get="/windows/buttons.html" hx-swap="none" hx-trigger="click, desiredextras" hx-on="htmx:afterRequest: massSwap(event)" class="w-full h-full border-blue border-[3px] xxs:border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none" data-container="buttons" id="mobileExtrasButton">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-9 h-9 fill-blue group-hover-focus:fill-gray transition-colors">
               <path d="M5.127 3.502 5.25 3.5h9.5c.041 0 .082 0 .123.002A2.251 2.251 0 0 0 12.75 2h-5.5a2.25 2.25 0 0 0-2.123 1.502ZM1 10.25A2.25 2.25 0 0 1 3.25 8h13.5A2.25 2.25 0 0 1 19 10.25v5.5A2.25 2.25 0 0 1 16.75 18H3.25A2.25 2.25 0 0 1 1 15.75v-5.5ZM3.25 6.5c-.04 0-.082 0-.123.002A2.25 2.25 0 0 1 5.25 5h9.5c.98 0 1.814.627 2.123 1.502a3.819 3.819 0 0 0-.123-.002H3.25Z" />
             </svg>
