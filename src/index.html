@@ -53,8 +53,7 @@
       </p>
     </main>
     <nav class="pt-12 sm:pt-14 md:pt-16">
-      <ul class="
-          flex flex-row items-center justify-evenly xs:justify-between">
+      <ul class="flex flex-row items-center justify-evenly xs:justify-between">
         <li class="aspect-square sm:w-96 h-24 flex justify-center items-center">
           <a aria-label="View Resume" href="/resume" class="w-full h-full border-blue border-4 rounded-full sm:px-10 flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none" id="projects">
             <span class="block text-blue group-hover-focus:text-gray transition-colors subheader !font-semibold">View Resume</span>
@@ -87,7 +86,7 @@
           </a>
         </li>
         <li class="aspect-square h-24 hidden xs:flex sm:hidden md:flex justify-center items-center">
-          <button aria-label="Extras" hx-get="/windows/buttons.html" hx-swap="none" hx-trigger="click, desiredextras" hx-on="htmx:afterRequest: massSwap(event)" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none" data-container="buttons">
+          <button aria-label="Extras" hx-get="/windows/buttons.html" hx-swap="none" hx-trigger="click, desiredextras" hx-on="htmx:afterRequest: massSwap(event)" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none" data-container="buttons" id="desktopExtrasButton">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-9 h-9 fill-blue group-hover-focus:fill-gray transition-colors">
               <path d="M5.127 3.502 5.25 3.5h9.5c.041 0 .082 0 .123.002A2.251 2.251 0 0 0 12.75 2h-5.5a2.25 2.25 0 0 0-2.123 1.502ZM1 10.25A2.25 2.25 0 0 1 3.25 8h13.5A2.25 2.25 0 0 1 19 10.25v5.5A2.25 2.25 0 0 1 16.75 18H3.25A2.25 2.25 0 0 1 1 15.75v-5.5ZM3.25 6.5c-.04 0-.082 0-.123.002A2.25 2.25 0 0 1 5.25 5h9.5c.98 0 1.814.627 2.123 1.502a3.819 3.819 0 0 0-.123-.002H3.25Z" />
             </svg>
@@ -118,7 +117,7 @@
           </a>
         </li>
         <li class="aspect-square h-24 hidden xs:flex sm:hidden md:flex justify-center items-center">
-          <button aria-label="Extras" hx-get="/windows/buttons.html" hx-trigger="click, desiredextras" hx-target="#page" hx-swap="outerHTML transition:true" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none" data-container="buttons">
+          <button aria-label="Extras" hx-get="/windows/buttons.html" hx-swap="none" hx-trigger="click, desiredextras" hx-on="htmx:afterRequest: massSwap(event)" class="w-full h-full border-blue border-4 rounded-full flex justify-center items-center group hover-focus:bg-blue transition-colors outline-none" data-container="buttons" id="mobileExtrasButton">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-9 h-9 fill-blue group-hover-focus:fill-gray transition-colors">
               <path d="M5.127 3.502 5.25 3.5h9.5c.041 0 .082 0 .123.002A2.251 2.251 0 0 0 12.75 2h-5.5a2.25 2.25 0 0 0-2.123 1.502ZM1 10.25A2.25 2.25 0 0 1 3.25 8h13.5A2.25 2.25 0 0 1 19 10.25v5.5A2.25 2.25 0 0 1 16.75 18H3.25A2.25 2.25 0 0 1 1 15.75v-5.5ZM3.25 6.5c-.04 0-.082 0-.123.002A2.25 2.25 0 0 1 5.25 5h9.5c.98 0 1.814.627 2.123 1.502a3.819 3.819 0 0 0-.123-.002H3.25Z" />
             </svg>
@@ -139,6 +138,27 @@
   </div>
 </div>
 <script>
+  function waitForElement(selector) {
+    return new Promise(resolve => {
+      let query = document.querySelectorAll(selector);
+      if(query) {
+        return resolve(query);
+      }
+      const observer = new MutationObserver(mutations => {
+        let observedQuery = document.querySelectorAll(selector);
+        if(observedQuery) {
+          observer.disconnect();
+          resolve(observedQuery);
+        }
+      });
+      // If you get "parameter 1 is not of type 'Node'" error, see https://stackoverflow.com/a/77855838/492336
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+    });
+  }
+
   const resizeObserver = new ResizeObserver((entries) => {
     document.getElementById("desktopPageContainer").style.height = document.getElementById("home").clientHeight + "px";
   });
@@ -173,13 +193,32 @@
   // the ide thinks its unused, but do not delete. htmx uses it
   function massSwap(event) {
     // view transitions api is important here
-    document.startViewTransition(() => {
+    let transition = document.startViewTransition(() => {
       document.querySelectorAll(`[data-container="page"]`).forEach(value => {
         let parent = value.parentElement;
         value.outerHTML = event.detail.xhr.response;
         parent.querySelectorAll(`[data-button="close"]`).forEach(htmx.process);
+        changeLogo();
       });
-    })
+    });
+    blurButtons(transition);
+  }
+
+  async function blurButtons(transition) {
+    try {
+      await transition.finished;
+    } finally {
+      console.log("blurbuttons");
+      document.getElementById("desktopExtrasButton").blur();
+      document.getElementById("mobileExtrasButton").blur();
+    }
+  }
+
+  async function changeLogo() {
+    if(window.SAWARATSUKI) {
+      waitForElement(`[data-uwu="button"]`).then(l => l.forEach(e => e.setAttribute("src", "/img/SAWARATSUKI.png")));
+      waitForElement(`[data-uwu="credit"]`).then(l => l.forEach(e => e.classList.remove("hidden")));
+    }
   }
 </script>
 <script src="/public/htmx.js"></script>

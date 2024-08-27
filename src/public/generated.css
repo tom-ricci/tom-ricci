@@ -699,10 +699,6 @@ video {
   width: 100%;
 }
 
-.\!w-full{
-  width: 100% !important;
-}
-
 .max-w-\[1776px\]{
   max-width: 1776px;
 }
@@ -1420,10 +1416,6 @@ article ::-moz-selection {
 
   .lg\:block{
     display: block;
-  }
-
-  .lg\:inline{
-    display: inline;
   }
 
   .lg\:flex{
