@@ -1,0 +1,9 @@
+/*
+  Access-Control-Allow-Origin: *
+
+/resume/
+  HX-Redirect: /resume
+  Content-Type: application/pdf
+  X-Content-Type-Options: nosniff
+  cache-control: no-transform
+  Link: </img/logo-favi-official.png>; rel='icon'
