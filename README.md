@@ -42,6 +42,6 @@ You can find all of my projects on my [portfolio](https://www.thomasricci.dev), 
 ### [Nexus](https://deploy.nexus)
 A platform that helps you build and maintain your own cloud using on-premises bare-metal or IaaS hardware.
 ### [FTC 19460](https://robotics.xbhs.net)
-I was the Captain and Software Director of FTC 19460, a competitive robotics team based in Massachusetts.
+I was the Captain and Software Director of FTC 19460, a competitive robotics team based in Massachusetts, during the FTC Freight Frenzy and POWERPLAY seasons.
 ### [Octobox](https://octobox.thomasricci.dev/)
 A simple but powerful React meta-framework built in TypeScript. Currently looking for maintainers.
