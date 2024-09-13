@@ -207,10 +207,12 @@
       blurButtons(transition);
     } else {
       // so, if it's not supported, i'll need to make it work
-      let parent = value.parentElement;
-      value.outerHTML = event.detail.xhr.response;
-      parent.querySelectorAll(`[data-button="close"]`).forEach(htmx.process);
-      changeLogo();
+      document.querySelectorAll(`[data-container="page"]`).forEach(value => {
+          let parent = value.parentElement;
+          value.outerHTML = event.detail.xhr.response;
+          parent.querySelectorAll(`[data-button="close"]`).forEach(htmx.process);
+          changeLogo();
+        });
       blurButtons(Promise.resolve());
     }
   }
