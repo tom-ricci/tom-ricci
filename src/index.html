@@ -192,16 +192,29 @@
 
   // the ide thinks its unused, but do not delete. htmx uses it
   function massSwap(event) {
-    // view transitions api is important here
-    let transition = document.startViewTransition(() => {
-      document.querySelectorAll(`[data-container="page"]`).forEach(value => {
-        let parent = value.parentElement;
-        value.outerHTML = event.detail.xhr.response;
-        parent.querySelectorAll(`[data-button="close"]`).forEach(htmx.process);
-        changeLogo();
+    // according to sillycord > 1283953893423841402, navigation doesn't work if the browser
+    // doesn't support the view transitions api. therefore, i need to ensure the browser supports
+    // it, and make the navigation happen even if it isnt supported
+    if("startViewTransition" in document) {
+      let transition = document.startViewTransition(() => {
+        document.querySelectorAll(`[data-container="page"]`).forEach(value => {
+          let parent = value.parentElement;
+          value.outerHTML = event.detail.xhr.response;
+          parent.querySelectorAll(`[data-button="close"]`).forEach(htmx.process);
+          changeLogo();
+        });
       });
-    });
-    blurButtons(transition);
+      blurButtons(transition);
+    } else {
+      // so, if it's not supported, i'll need to make it work
+      document.querySelectorAll(`[data-container="page"]`).forEach(value => {
+          let parent = value.parentElement;
+          value.outerHTML = event.detail.xhr.response;
+          parent.querySelectorAll(`[data-button="close"]`).forEach(htmx.process);
+          changeLogo();
+        });
+      blurButtons(Promise.resolve());
+    }
   }
 
   async function blurButtons(transition) {
