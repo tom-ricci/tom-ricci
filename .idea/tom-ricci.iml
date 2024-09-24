@@ -16,5 +16,6 @@
     <orderEntry type="library" name="hyperscript.org" level="application" />
     <orderEntry type="library" name="hyperscript.org" level="application" />
     <orderEntry type="library" name="htmx-ext-multi-swap" level="application" />
+    <orderEntry type="library" name="hyperscript.org" level="application" />
   </component>
 </module>
