@@ -136,6 +136,10 @@ article ::-moz-selection {
     background: #4DA2FF;
 }
 
+article img {
+    user-select: none;
+}
+
 /* need this b/c it's applied with js and tw doesnt like that */
 .nooverflow {
     overflow: hidden;

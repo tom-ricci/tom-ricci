@@ -596,6 +596,10 @@ video {
   display: block;
 }
 
+.inline-block{
+  display: inline-block;
+}
+
 .inline{
   display: inline;
 }
@@ -858,16 +862,12 @@ video {
   padding-top: 3rem;
 }
 
-.pt-4{
-  padding-top: 1rem;
+.pt-3{
+  padding-top: 0.75rem;
 }
 
 .pt-6{
   padding-top: 1.5rem;
-}
-
-.pt-3{
-  padding-top: 0.75rem;
 }
 
 .text-justify{
@@ -1114,6 +1114,12 @@ article ::selection {
 
 article ::-moz-selection {
   background: #4DA2FF;
+}
+
+article img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 /* need this b/c it's applied with js and tw doesnt like that */
