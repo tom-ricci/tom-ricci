@@ -161,14 +161,6 @@ article ::-moz-selection {
     transform: translate(0px,-1.3px);
 }
 
-.friends-row {
-    @apply pb-4;
-}
-
-.friends-row:last-child {
-    @apply pb-0;
-}
-
 /* ===== Scrollbar CSS ===== */
 
 @media not all and (pointer: none), (pointer: coarse) {
