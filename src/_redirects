@@ -7,3 +7,11 @@
 /extras/ /?extras=true
 /extras?* /?extras=true&:splat
 /extras/?* /?extras=true&:splat
+/friends /?extras=true
+/friends/ /?extras=true
+/friends?* /?extras=true&:splat
+/friends/?* /?extras=true&:splat
+/buttons /?extras=true
+/buttons/ /?extras=true
+/buttons?* /?extras=true&:splat
+/buttons/?* /?extras=true&:splat
