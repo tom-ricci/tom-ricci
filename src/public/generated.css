@@ -560,20 +560,12 @@ video {
   left: 0.5rem;
 }
 
-.left-\[1\.23rem\]{
-  left: 1.23rem;
-}
-
 .top-0{
   top: 0px;
 }
 
 .top-2{
   top: 0.5rem;
-}
-
-.top-\[2\.25rem\]{
-  top: 2.25rem;
 }
 
 .top-\[6\.75rem\]{
@@ -596,12 +588,12 @@ video {
   margin-top: 2rem;
 }
 
-.block{
-  display: block;
+.mt-11{
+  margin-top: 2.75rem;
 }
 
-.inline-block{
-  display: inline-block;
+.block{
+  display: block;
 }
 
 .inline{
@@ -724,11 +716,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-y-2{
-  --tw-translate-y: 0.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .cursor-default{
   cursor: default;
 }
@@ -785,10 +772,6 @@ video {
   border-radius: 9999px;
 }
 
-.border-2{
-  border-width: 2px;
-}
-
 .border-4{
   border-width: 4px;
 }
@@ -830,6 +813,10 @@ video {
 
 .fill-blue{
   fill: rgb(0,122,255);
+}
+
+.stroke-blue{
+  stroke: rgb(0,122,255);
 }
 
 .p-6{
@@ -1132,20 +1119,28 @@ article ::-moz-selection {
 }
 
 .web1 {
-  width: 5.5rem;
-  height: 1.9375rem;
+  width: 88px;
+  height: 31px;
 }
 
 .web1-w {
-  width: 5.5rem;
+  width: 88px;
 }
 
 .web1-h {
-  height: 1.9375rem;
+  height: 31px;
 }
 
 .yfix {
   transform: translate(0px,-1.3px);
+}
+
+.friends-row{
+  padding-bottom: 1rem;
+}
+
+.friends-row:last-child{
+  padding-bottom: 0px;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -1315,6 +1310,10 @@ article ::-moz-selection {
   fill: rgb(242,242,247);
 }
 
+.group:hover .group-hover-focus\:stroke-gray{
+  stroke: rgb(242,242,247);
+}
+
 .group:hover .group-hover-focus\:text-blue{
   --tw-text-opacity: 1;
   color: rgb(0 122 255 / var(--tw-text-opacity));
@@ -1332,6 +1331,10 @@ article ::-moz-selection {
 
 .group:focus .group-hover-focus\:fill-gray{
   fill: rgb(242,242,247);
+}
+
+.group:focus .group-hover-focus\:stroke-gray{
+  stroke: rgb(242,242,247);
 }
 
 .group:focus .group-hover-focus\:text-blue{
@@ -1356,10 +1359,6 @@ article ::-moz-selection {
 }
 
 @media (min-width: 650px){
-  .xxs\:mt-\[4\.25rem\]{
-    margin-top: 4.25rem;
-  }
-
   .xxs\:block{
     display: block;
   }
@@ -1398,10 +1397,6 @@ article ::-moz-selection {
 
   .xs\:gap-8{
     gap: 2rem;
-  }
-
-  .xs\:border-4{
-    border-width: 4px;
   }
 
   .xs\:px-32{
