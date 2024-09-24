@@ -150,15 +150,23 @@ article ::-moz-selection {
 }
 
 .web1-w {
-    width: 5.5rem;
+    width: 88px;
 }
 
 .web1-h {
-    height: 1.9375rem;
+    height: 31px;
 }
 
 .yfix {
     transform: translate(0px,-1.3px);
+}
+
+.friends-row {
+    @apply pb-4;
+}
+
+.friends-row:last-child {
+    @apply pb-0;
 }
 
 /* ===== Scrollbar CSS ===== */
