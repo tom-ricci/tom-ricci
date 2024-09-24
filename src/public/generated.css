@@ -866,6 +866,10 @@ video {
   padding-top: 1.5rem;
 }
 
+.pt-3{
+  padding-top: 0.75rem;
+}
+
 .text-justify{
   text-align: justify;
 }
