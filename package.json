@@ -11,7 +11,7 @@
     "serve": "npx --yes serve src",
     "bundle": "yes | cp -af src/. dist",
     "patch": "node patch.js",
-    "start": "concurrently -k 'npm run import' 'npm run serve'",
+    "start": "npm run import && concurrently -k 'npm run css' 'npm run serve'",
     "build": "npm run import && npm run bundle && npm run patch"
   },
   "repository": {
