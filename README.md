@@ -1,7 +1,7 @@
 <!-- FOR DEVELOPMENT README, SEE CONTRIBUTING.MD -->
 
 # hey, i'm thomas
-I'm a college student and software engineer currently pursuing a Bachelor's degree in Computer Science at WPI and building software at [Pyro](https://pyro.host). I’ve been programming since 2017 and have experience with many technologies. Visit my [portfolio](https://www.thomasricci.dev) to learn more.
+I'm a college student and software engineer currently pursuing a Bachelor's degree in Computer Science at WPI and building software at [The Intersection Company](https://theintersectioncompany.com). I’ve been programming since 2017 and have experience with many technologies. Visit my [portfolio](https://www.thomasricci.dev) to learn more.
 # experience
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
