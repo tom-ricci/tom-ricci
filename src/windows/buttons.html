@@ -1,16 +1,22 @@
-<article class="border-blue border-4 border-solid grow rounded-3xl p-6 px-9 bg-blue text-gray h-full w-full flex flex-col relative" data-container="page" hx-swap="outerHTML transition:true" id="buttonsPage">
+<article
+  class="border-blue border-4 border-solid grow rounded-3xl p-6 px-9 bg-blue text-gray h-full w-full flex flex-col relative"
+  data-container="page" hx-swap="outerHTML transition:true">
   <div class="flex flex-row justify-between">
-    <h2 class="header align-text-top cursor-default">friends</h2>
-    <button aria-label="Close" hx-get="/windows/projects.html" hx-swap="none" hx-on="htmx:afterRequest: massSwap(event)" data-button="close">
+    <h2 class="header align-text-top cursor-default">88x31s</h2>
+    <button aria-label="Close" hx-get="/windows/projects.html" hx-swap="none" hx-on="htmx:afterRequest: massSwap(event)"
+            data-button="close">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-11 h-11">
-        <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM8.28 7.22a.75.75 0 0 0-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 1 0 1.06 1.06L10 11.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L11.06 10l1.72-1.72a.75.75 0 0 0-1.06-1.06L10 8.94 8.28 7.22Z" clip-rule="evenodd" />
+        <path fill-rule="evenodd"
+              d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM8.28 7.22a.75.75 0 0 0-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 1 0 1.06 1.06L10 11.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L11.06 10l1.72-1.72a.75.75 0 0 0-1.06-1.06L10 8.94 8.28 7.22Z"
+              clip-rule="evenodd"/>
       </svg>
     </button>
   </div>
   <section class="grow overflow-auto overflow-x-hidden mt-3 blue-scroller">
     <div class="mt-8">
-      <div class="grid grid-cols-[repeat(auto-fit,88px)] gap-[0.85rem]" id="friends">
-        <button aria-label="Copy my button" onclick="copyBtn()"><img src="https://button.thomasricci.dev" alt="My Button" class="block web1"></button>
+      <div class="grid grid-cols-[repeat(auto-fit,88px)]" id="friends">
+        <button aria-label="Copy my button" onclick="copyBtn()"><img src="https://button.thomasricci.dev"
+                                                                     alt="My Button" class="block web1"></button>
         <a href="https://lastsunrise.art"><img src="/buttons/cat.gif" alt="Cat" class="web1"></a>
         <a href="https://npm-i.neocities.org"><img src="/buttons/octo.png" alt="Octo" class="web1"></a>
         <a href="https://hayl.in"><img src="/buttons/haylin.png" alt="Haylin" class="web1"></a>
@@ -19,20 +25,24 @@
         <a aria-label="Moon" href="https://moon.is.being.pet/"><img src="/buttons/moon.gif" alt="Moon" class="web1"></a>
         <a href="https://easrng.net"><img src="/buttons/easrng.gif" alt="Easrng" class="web1"></a>
         <a href="https://lily.pet"><img src="/buttons/lily_pet.gif" alt="Lily" class="web1"></a>
-        <a href="https://slonk.ing"><img src="/buttons/rain.gif" alt="Rain" class="web1"></a>
+        <!-- <a href="https://slonk.ing"><img src="/buttons/rain.gif" alt="Rain" class="web1"></a>-->
         <a href="https://notnite.com"><img src="/buttons/notnite.png" alt="Julian" class="web1"></a>
         <a href="https://ezri.pet"><img src="/buttons/ezri.png" alt="Ezri" class="web1"></a>
         <a href="https://alula.me"><img src="/buttons/alula.png" alt="Alula" class="web1"></a>
         <a href="https://eva.ac"><img src="/buttons/eva.png" alt="Eva" class="web1"></a>
         <a href="https://jamie.rs"><img src="/buttons/jamie.png" alt="Jamie" class="web1"></a>
-        <a href="https://zptr.cc/"><img src="https://zptr.cc/88x31/webring/zeroptr.png" alt="zeroptr" class="web1"></a>
+        <!-- <a href="https://zptr.cc/"><img src="https://zptr.cc/88x31/webring/zeroptr.png" alt="zeroptr" class="web1"></a> -->
         <a href="https://lina.sh/"><img src="/buttons/lina.gif" alt="Lina" class="web1"></a>
       </div>
     </div>
     <div class="mt-11 cursor-default">
       <h3 class="text-gray subheader pb-3">Notes</h3>
       <p class="text-gray body pb-3">
-        Instead of using a traditional JS framework, I built this site with <code>htmx</code> and <code>_hyperscript</code>, using vanilla JS where necessary. I ran into a few tasks which would've been better suited for a traditional framework&mdash;maybe I'll create my own <code>htmx</code>-compatible library to solve these? Regardless, it was a pleasure to step back from complexity and rely on hypermedia controls. Hopefully I can take this approach again for another project!
+        Instead of using a traditional JS framework, I built this site with <code>htmx</code> and
+        <code>_hyperscript</code>, using vanilla JS where necessary. I ran into a few tasks which would've been better
+        suited for a traditional framework&mdash;maybe I'll create my own <code>htmx</code>-compatible library to solve
+        these? Regardless, it was a pleasure to step back from complexity and rely on hypermedia controls. Hopefully I
+        can take this approach again for another project!
       </p>
       <a href="https://htmx.org"><img src="/img/htmx.png" data-uwu="button" alt="HTMX Button" class="web1-h inline"></a>
       <p class="text-gray body hidden pt-3" data-uwu="credit">
@@ -40,8 +50,10 @@
       </p>
     </div>
   </section>
-  <div class="absolute top-[6.75rem] left-0 w-[calc(100%-3.25rem+0.125rem)] h-7" style="background-image: linear-gradient(to top, rgba(0,122,255,0), rgba(0,122,255,1));"></div>
-  <div class="hidden lg:block absolute bottom-7 left-0 w-[calc(100%-3.25rem+0.125rem)] h-7" style="background-image: linear-gradient(to bottom, rgba(0,122,255,0), rgba(0,122,255,1));"></div>
+  <div class="absolute top-[6.75rem] left-0 w-[calc(100%-3.25rem+0.125rem)] h-7"
+       style="background-image: linear-gradient(to top, rgba(0,122,255,0), rgba(0,122,255,1));"></div>
+  <div class="hidden lg:block absolute bottom-7 left-0 w-[calc(100%-3.25rem+0.125rem)] h-7"
+       style="background-image: linear-gradient(to bottom, rgba(0,122,255,0), rgba(0,122,255,1));"></div>
   <div class="hidden lg:block absolute bottom-5 left-0 w-[calc(100%-3.25rem+0.125rem)] h-2 bg-blue"></div>
 </article>
 

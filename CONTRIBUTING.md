@@ -33,11 +33,8 @@ The two most likely things to change are the main body content and the project l
 #### Language List
 The list of languages I have experience with matches the `#langs` selector.
 
-#### Friends
-Friends are listed in `/windows/buttons.html`, inside the element matching the `#friends` selector.
-
-#### Current Project
-The section detailing what I'm doing currently matches the `#current` selector.
+#### 88x31s
+88x31s are listed in `/windows/buttons.html`, inside the element matching the `#friends` selector. They are ALSO listed in `index.html` inside the element matching the `#bots` selector. You should add an 88x31 to both so that it can be listed in the `Extras` panel as well as be scraped by Mat, Jules, etc.
 
 #### Projects List
 To add something to the projects list, insert the following into `ul#projectlist` in`/src/windows/projects.html`. Make sure to replace the placeholders.
