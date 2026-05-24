@@ -1,4 +1,4 @@
-/resume.pdf /resume 301
+/resume.pdf /resume 302
 /projects /
 /projects/ /
 /projects?* /:splat
