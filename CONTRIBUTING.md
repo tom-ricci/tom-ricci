@@ -1,30 +1,12 @@
 # Contributing Guide
 This project is my personal portfolio&mdash;it's not exactly meant for people to contribute to, but if you want to, go ahead! This page is mainly for me to refer back to when I want to make a change since I can't use this project's readme.
-### Installing
-Make sure [Devbox](https://jetpack.io/devbox) and [direnv](https://direnv.net/) are installed and set up. 
 
-If the system has bash and apt, run:
-```bash
-bash <(curl -s https://raw.githubusercontent.com/tom-ricci/easy-devbox/master/script.sh)
-```
-to get everything working and then restart the shell.
-
-Then, in the project directory, run:
-```bash
-direnv allow
-```
-and then restart the shell again.
-
-If your IDE has per-project Node.js support, point it to `./.devbox/nix/profile/default/bin/node` and `./.devbox/nix/profile/default/bin/npm`.
-
-Finally run:
-```bash
-npm run bootstrap
-```
+### Setup
+This project provides dependencies in a Nix shell defined in `flake.nix`. If you have nix-direnv, it will Just Work™.
 
 ### Development
 ```bash
-npm run start
+npm run dev
 ```
 
 ### Adding Content
@@ -37,7 +19,7 @@ The list of languages I have experience with matches the `#langs` selector.
 88x31s are listed in `/windows/buttons.html`, inside the element matching the `#friends` selector. They are ALSO listed in `index.html` inside the element matching the `#bots` selector. You should add an 88x31 to both so that it can be listed in the `Extras` panel as well as be scraped by Mat, Jules, etc.
 
 #### Projects List
-To add something to the projects list, insert the following into `ul#projectlist` in`/src/windows/projects.html`. Make sure to replace the placeholders.
+To add something to the project list, insert the following into `ul#projectlist` in`/src/windows/projects.html`. Make sure to replace the placeholders.
 ```html
 <li class="group cursor-pointer block">
   <a href="Project Link">
@@ -65,12 +47,12 @@ To add something to the projects list, insert the following into `ul#projectlist
 ```
 
 ### Building
-This should be taken care of by Cloudflare Pages, however if needed the project can be built locally with:
+This should be taken care of by Cloudflare Pages, however, if needed, the project can be built locally with:
 ```bash
 npm run build
 ```
 
 ### Notes
-This project is a little simple website using htmx, hyperscript, and TailwindCSS. The tooling may be a bit much, however I'm doing it on purpose to force all dev environments to be the exact same. And so I can have continuous deployment.
+This project is a little simple website using htmx, hyperscript, and TailwindCSS. The tooling may be a bit much; however, I'm doing it on purpose to force all dev environments to be the exact same. And so I can have continuous deployment.
 
 It's hosted on Cloudflare Pages at [tom-ricci.pages.dev](https://tom-ricci.pages.dev). I've also pointed all my personal portfolio domains to it (or, rather, will when it's done).
