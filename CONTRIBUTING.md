@@ -1,5 +1,5 @@
 # Contributing Guide
-This project is my personal portfolio&mdash;it's not exactly meant for people to contribute to, but if you want to, go ahead! This page is mainly for me to refer back to when I want to make a change since I can't use this project's readme.
+This project is my personal portfolio&mdash;it's not exactly meant for people to contribute to, but if you want to, go ahead! No guarantees I'll merge anything, though. This file is primarily for me to refer to when I want to make a change.
 
 ### Setup
 This project provides dependencies in a Nix shell defined in `flake.nix`. If you have nix-direnv, it will Just Work™.
@@ -45,6 +45,17 @@ To add something to the project list, insert the following into `ul#projectlist`
   </a>
 </li>
 ```
+
+#### Resume
+To update the resume, replace `src/resume.pdf`, `src/assets/resume.pdf`, and `src/resume/index.html` (by copying the resume over and changing its name to `index.html`).
+
+Cloudflare Pages will handle headers automatically for `src/resume/index.html` so browsers know to interpret it as a PDF. 
+
+However, some browsers just won't render anything except hypertext unless there's an extension, so I'm going to be switching to redirecting to `/resume.pdf` in all circumstances. Currently, though, `/resume.pdf` redirects to `/resume` with a 301 redirect, so I need to have a cooldown period before setting up the redirect to `/resume.pdf` (if I set it up now, browsers which have cached the 301 redirect will eventually fail with `ERR_TOO_MANY_REDIRECTS`). Google recommends at least 1 year, so my plan is to wait until at least 6/1/2027.
+
+`src/assets/resume.pdf` is used to work around this for the time being. Cloudflare returns a 302 redirect from `/resume` to `/assets/resume.pdf`, so anyone who gets redirected to `/resume` will eventually still end up with a PDF that browsers actually like.
+
+Eventually I should set up some sort of analytics to see how many people are being redirected to `/resume` so I know when nobody's using it anymore and I can actually set up the redirect to `/resume.pdf`.
 
 ### Building
 This should be taken care of by Cloudflare Pages, however, if needed, the project can be built locally with:
