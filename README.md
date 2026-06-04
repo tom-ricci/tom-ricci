@@ -2,6 +2,7 @@
 
 # hey, i'm thomas
 I'm a college student and software engineer currently pursuing a Bachelor's degree in Computer Science at WPI and building software at [The Intersection Company](https://theintersectioncompany.com) and [InvoiceCloud](https://invoicecloud.net). I’ve been programming since 2015 and have experience with many technologies. Visit my [portfolio](https://www.thomasricci.dev) to learn more.
+
 # experience
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
@@ -73,12 +74,15 @@ I'm a college student and software engineer currently pursuing a Bachelor's degr
 
 # projects
 You can find all of my projects on my [portfolio](https://www.thomasricci.dev), but these are my favorites.
+
+### [CiviCAD](https://civicad.com)
+Next-generation CAD software for the infrastructure industry by [The Intersection Company](https://theintersectioncompany.com).
+
 ### [Nexus](https://deploy.nexus)
-A platform that helps you build and maintain your own cloud using on-premises bare-metal or IaaS hardware.
+A platform that helps you build and maintain your own cloud using on-premises bare-metal or IaaS hardware. Work in progress.
+
 ### [FTC 19460](https://robotics.xbhs.net)
-I was the Captain and Software Director of FTC 19460, a competitive robotics team based in Massachusetts, during the FTC Freight Frenzy and POWERPLAY seasons.
-### [Octobox](https://octobox.thomasricci.dev/)
-A simple but powerful React meta-framework built in TypeScript. Currently looking for maintainers.
+I was the Captain and Director of Software at FTC 19460, a competitive robotics team based in Massachusetts, during the FTC Freight Frenzy and POWERPLAY seasons.
 
 ---
 
