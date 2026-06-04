@@ -1,7 +1,7 @@
 <!-- FOR DEVELOPMENT README, SEE CONTRIBUTING.MD -->
 
 # hey, i'm thomas
-I'm a college student and software engineer currently pursuing a Bachelor's degree in Computer Science at WPI and building software at [The Intersection Company](https://theintersectioncompany.com). I’ve been programming since 2015 and have experience with many technologies. Visit my [portfolio](https://www.thomasricci.dev) to learn more.
+I'm a college student and software engineer currently pursuing a Bachelor's degree in Computer Science at WPI and building software at [The Intersection Company](https://theintersectioncompany.com) and [InvoiceCloud](https://invoicecloud.net). I’ve been programming since 2015 and have experience with many technologies. Visit my [portfolio](https://www.thomasricci.dev) to learn more.
 # experience
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
