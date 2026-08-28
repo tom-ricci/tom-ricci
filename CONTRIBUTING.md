@@ -49,6 +49,8 @@ To add something to the project list, insert the following into `ul#projectlist`
 #### Resume
 To update the resume, replace `src/resume.pdf`, `src/assets/resume.pdf`, and `src/resume/index.html` (by copying the resume over and changing its name to `index.html`).
 
+(You should also go update the resume on the CDN as well, since it is copied over there too.)
+
 Cloudflare Pages will handle headers automatically for `src/resume/index.html` so browsers know to interpret it as a PDF. 
 
 However, some browsers just won't render anything except hypertext unless there's an extension, so I'm going to be switching to redirecting to `/resume.pdf` in all circumstances. Currently, though, `/resume.pdf` redirects to `/resume` with a 301 redirect, so I need to have a cooldown period before setting up the redirect to `/resume.pdf` (if I set it up now, browsers which have cached the 301 redirect will eventually fail with `ERR_TOO_MANY_REDIRECTS`). Google recommends at least 1 year, so my plan is to wait until at least 6/1/2027.
