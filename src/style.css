@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kameron:wght@400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kameron:wght@400..700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -11,10 +11,10 @@
 
 .material-symbols-outlined {
     font-variation-settings:
-            'FILL' 0,
-            'wght' 400,
-            'GRAD' 0,
-            'opsz' 24
+        "FILL" 0,
+        "wght" 400,
+        "GRAD" 0,
+        "opsz" 24;
 }
 
 @keyframes load {
@@ -87,7 +87,7 @@
 }
 
 .tracking-body {
-    @apply tracking-tight
+    @apply tracking-tight;
 }
 
 .weight-body {
@@ -123,17 +123,17 @@
 }
 
 ::selection {
-    background: #28282B;
+    background: #28282b;
 }
 ::-moz-selection {
-    background: #28282B;
+    background: #28282b;
 }
 
 article ::selection {
-    background: #4DA2FF;
+    background: #4da2ff;
 }
 article ::-moz-selection {
-    background: #4DA2FF;
+    background: #4da2ff;
 }
 
 article img {
@@ -162,17 +162,16 @@ article img {
 }
 
 .yfix {
-    transform: translate(0px,-1.3px);
+    transform: translate(0px, -1.3px);
 }
 
 /* ===== Scrollbar CSS ===== */
 
 @media not all and (pointer: none), (pointer: coarse) {
-
     /* Firefox */
     * {
         scrollbar-width: auto;
-        scrollbar-color: #28282B rgb(28,28,30);
+        scrollbar-color: #28282b rgb(28, 28, 30);
     }
 
     /* Chrome, Edge, and Safari */
@@ -181,19 +180,19 @@ article img {
     }
 
     *::-webkit-scrollbar-track {
-        background: rgb(28,28,30);
+        background: rgb(28, 28, 30);
     }
 
     *::-webkit-scrollbar-thumb {
-        background-color: #28282B;
+        background-color: #28282b;
         border-radius: 9999px;
-        border: 0.25rem solid rgb(28,28,30);
+        border: 0.25rem solid rgb(28, 28, 30);
     }
 
     /* Firefox */
     .blue-scroller {
         scrollbar-width: auto;
-        scrollbar-color: #4DA2FF rgb(0,122,255);
+        scrollbar-color: #4da2ff rgb(0, 122, 255);
     }
 
     /* Chrome, Edge, and Safari */
@@ -202,15 +201,14 @@ article img {
     }
 
     .blue-scroller::-webkit-scrollbar-track {
-        background: rgb(0,122,255);
+        background: rgb(0, 122, 255);
     }
 
     .blue-scroller::-webkit-scrollbar-thumb {
-        background-color: #4DA2FF;
+        background-color: #4da2ff;
         border-radius: 9999px;
-        border: 0.25rem solid rgb(0,122,255);
+        border: 0.25rem solid rgb(0, 122, 255);
     }
-
 }
 
 /* SCROLLBAR END */
@@ -224,7 +222,6 @@ article img {
         font-size: 10px !important;
     }
 }
-
 
 @media screen("xxxxxxs") {
     :root {
@@ -308,4 +305,8 @@ article img {
     :root {
         font-size: 32px !important;
     }
+}
+
+.__extras {
+    display: none !important;
 }
